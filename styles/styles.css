@@ -275,7 +275,8 @@ header .container .lang button {
   border: 0;
   border-radius: 20px;
   margin-right: 5px;
-  font-size: "Oswald", "Oswald", sans-serif;
+  font-size: 20px;
+  color: #242B45;
 }
 
 .searchbar .container button {
