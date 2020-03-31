@@ -1,0 +1,44 @@
+footer {
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px 0px;
+    height: 150px;
+    background: $color1;
+
+    .container {
+        background: $color1;
+
+        .footer-logo {
+            img {
+                width: 100%;
+                height: 104px;
+                filter: invert(100%);
+            };
+        };
+
+        .contact-info {
+            padding-left: 50px;
+
+            h1 {
+                font-size: $fsize2;
+                text-transform: uppercase;
+                font-weight: 200;
+                color: $color3;
+            };
+
+            .contact {
+                a{
+                    font-family: $font3;
+                    font-size: $fsize1;
+                    color: $color3;
+                    text-decoration: none;
+                    font-weight: 300;
+                };
+            };
+        };
+
+        .social {
+            margin-left: auto;
+        };
+    };
+};

@@ -1,0 +1,29 @@
+@mixin hyperlink {
+    a{
+        text-transform: uppercase;
+        vertical-align: baseline;
+        text-decoration: none;
+        color: $color1;
+        font-size: 14px;
+
+        &:hover {
+            color: $color2;
+        };
+    };
+};
+
+@mixin greenBtn {
+    button{
+        background: $color2;
+        width: 90px;
+        height: 60px;
+        border-radius: 6px;
+        border: 0;
+        text-transform: uppercase;
+        vertical-align: baseline;
+        color: $color3;
+        font-size: $fsize2;
+        font-weight: 600;
+        font-family: inherit;
+    }
+};
