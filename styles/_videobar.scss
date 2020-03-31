@@ -6,14 +6,35 @@
     background-repeat: no-repeat;
 
     .v-container {
-         display: flex;
+        width: 100%;
+        
 
         .thumbnail-text {
-            flex-grow: 1;
+            position: relative;
+            display: flex;
+            flex-direction: column;
             justify-content: center;
-            align-items: center;
+            width: 1160px;
+            flex-grow: 1;
             color: $color3;
-            
+
+            img {
+                width: 60px ;
+            }
+
+            h1{
+                font-size: $fsize4;
+                text-transform: uppercase;
+                font-weight: 300;
+                margin: 0;
+            }
+
+            p{
+                font-family: $font3;
+                font-size: $fsize1;
+                margin: 0;
+            }
+
         };
 
         .container {
