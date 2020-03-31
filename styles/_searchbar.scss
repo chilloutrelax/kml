@@ -1,0 +1,24 @@
+.searchbar {
+    background: $color1;
+    padding: 10px;
+
+    .container {
+        justify-content: center;
+        align-content: center;
+
+        input {
+            width: 1020px;
+            padding: 10px;
+            border: 0;
+            border-radius: 20px;
+            margin-right: 10px;
+        }
+
+        @include greenBtn;
+        button {
+            font-size: $fsize2;
+            width: 100px;
+            height: 40px;
+        }
+    }
+}

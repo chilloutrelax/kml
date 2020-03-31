@@ -249,6 +249,47 @@ header .container .lang button {
           transform: scale(1.1);
 }
 
+.searchbar {
+  background: #242B45;
+  padding: 10px;
+}
+
+.searchbar .container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.searchbar .container input {
+  width: 1020px;
+  padding: 10px;
+  border: 0;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.searchbar .container button {
+  background: #3FBEBC;
+  width: 90px;
+  height: 60px;
+  border-radius: 6px;
+  border: 0;
+  text-transform: uppercase;
+  vertical-align: baseline;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+.searchbar .container button {
+  font-size: 20px;
+  width: 100px;
+  height: 40px;
+}
+
 footer {
   position: relative;
   bottom: 0;
