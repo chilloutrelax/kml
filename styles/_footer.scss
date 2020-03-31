@@ -1,12 +1,16 @@
 footer {
+    position: absolute;
+    bottom: 0;
     margin: 0 auto;
     width: 100%;
     padding: 10px 0px;
     height: 150px;
     background: $color1;
+    
 
     .container {
         background: $color1;
+        
 
         .footer-logo {
             img {
