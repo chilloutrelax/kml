@@ -41,6 +41,12 @@ body {
   height: 100%;
 }
 
+.container1 {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 header {
   margin: 0 auto;
   width: 100%;
@@ -263,11 +269,11 @@ header .container .lang button {
 }
 
 .searchbar .container input {
-  width: 1020px;
+  width: 1050px;
   padding: 10px;
   border: 0;
   border-radius: 20px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .searchbar .container button {
@@ -288,6 +294,52 @@ header .container .lang button {
   font-size: 20px;
   width: 100px;
   height: 40px;
+  margin-left: 5px;
+}
+
+section {
+  background: url(../img/section/Image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  padding: 100px 0;
+}
+
+section .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+}
+
+section .container #nonBold {
+  font-weight: 300;
+  margin-bottom: -30px;
+}
+
+section .container h1 {
+  color: #ffffff;
+  font-size: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+section .container .text-wrap {
+  max-width: 760px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+section .container .text-wrap p {
+  color: #fff;
+}
+
+section .container .text-wrap #lastSent {
+  font-size: 24px;
 }
 
 footer {

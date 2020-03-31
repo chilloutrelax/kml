@@ -7,11 +7,12 @@
         align-content: center;
 
         input {
-            width: 1020px;
+            width: 1050px;
             padding: 10px;
             border: 0;
             border-radius: 20px;
-            margin-right: 10px;
+            margin-right: 5px;
+           
         }
 
         @include greenBtn;
@@ -19,6 +20,7 @@
             font-size: $fsize2;
             width: 100px;
             height: 40px;
+            margin-left: 5px;
         }
     }
 }
