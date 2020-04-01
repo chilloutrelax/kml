@@ -1,0 +1,67 @@
+.support {
+    .container-fluid {
+        background: url(../img/section-support/support-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 50px 0;
+
+        .container {
+        display: flex;
+            .support-1 {
+                flex: 1;
+                display: block;
+                
+                .support-text {
+                    h2{
+                        margin:0;
+                        padding: 0;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        font-size: $fsize5;
+                        color: $color1;
+                    }
+    
+                    p {
+                        font-family: $font3;
+                        font-size: $fsize8;
+                    }
+    
+                    @include greenBtn;
+                };
+            };
+
+            .support-2 {
+                .support-card {
+                    width: 320px;
+                    background: $color3;
+                    padding: 20px;
+                    border-radius: 10px;
+
+                    img {
+                        max-width: 50%;
+                    }
+
+                    p {
+                        font-family: $font3;
+                        font-size: $fsize8;
+                    }
+
+                    a {
+                        font-family: $font3;
+                        font-size: $fsize8;
+                        color: $color2;
+                    };
+                };
+
+                .support-bank {
+                    h4 {
+                        text-transform: uppercase;
+                    }
+
+                    p {font-family: $font3;}
+                }
+            };
+
+        };
+    };
+};

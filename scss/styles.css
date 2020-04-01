@@ -583,6 +583,84 @@ header .container .lang button {
   text-align: center;
 }
 
+.support .container-fluid {
+  background: url(../img/section-support/support-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+}
+
+.support .container-fluid .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.support .container-fluid .container .support-1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: block;
+}
+
+.support .container-fluid .container .support-1 .support-text h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 60px;
+  color: #242B45;
+}
+
+.support .container-fluid .container .support-1 .support-text p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.support .container-fluid .container .support-1 .support-text button {
+  background: #3FBEBC;
+  width: 90px;
+  height: 60px;
+  border-radius: 6px;
+  border: 0;
+  text-transform: uppercase;
+  vertical-align: baseline;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+.support .container-fluid .container .support-2 .support-card {
+  width: 320px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.support .container-fluid .container .support-2 .support-card img {
+  max-width: 50%;
+}
+
+.support .container-fluid .container .support-2 .support-card p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.support .container-fluid .container .support-2 .support-card a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #3FBEBC;
+}
+
+.support .container-fluid .container .support-2 .support-bank h4 {
+  text-transform: uppercase;
+}
+
+.support .container-fluid .container .support-2 .support-bank p {
+  font-family: "Open Sans", sans-serif;
+}
+
 footer {
   position: relative;
   bottom: 0;
