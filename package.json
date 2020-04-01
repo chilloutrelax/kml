@@ -1,0 +1,30 @@
+{
+  "name": "icon",
+  "version": "1.0.0",
+  "description": "praktika",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build --experimental-scope-hoisting --public-url . index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chilloutrelax/kml.git"
+  },
+  "keywords": [
+    "praktika"
+  ],
+  "author": "Riko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chilloutrelax/kml/issues"
+  },
+  "homepage": "https://github.com/chilloutrelax/kml#readme",
+  "dependencies": {
+    "ol": "6.2.1"
+  },
+  "devDependencies": {
+    "parcel": "1.11.0",
+    "parcel-bundler": "^1.12.4"
+  }
+}

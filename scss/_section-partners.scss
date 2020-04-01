@@ -1,0 +1,70 @@
+.partners {
+    .container-fluid {
+        background: #fff;
+        padding: 50px 0;
+
+        .container {
+            display: block;
+            flex-direction: column;
+
+            h2 {
+                font-weight: 300;
+                text-transform: uppercase;
+                color: $color1;
+                font-size: $fsize5;
+                margin: 0;
+                padding-bottom: 30px;
+            }
+
+            .partners-list {
+                display: flex;
+                font-size: $fsize1;
+                font-family: $font3;
+                
+                ul {
+                    width: 100%;
+                    list-style-type: none;
+                    columns: 4;
+
+                    li {padding: 10px}
+
+                    a {
+                        text-decoration: none;
+                        color: $color1;
+                    };
+                };
+            };
+
+            h3 {
+                font-family: $font3;
+                font-size: $fsize4;
+                text-transform: uppercase;
+                font-weight: 400;
+            };
+
+            .supporters-list {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+
+                .supporter{
+                    width: 240px;
+                    padding-bottom: 40px;
+
+                    img {
+                        max-width: 100%;
+                    }
+
+                    h3 {
+                        text-transform: none;
+                        font-weight: 600;
+                        font-size:$fsize7;
+                        text-align: center;
+                    }
+                }
+            }
+        };
+    };
+};

@@ -1,0 +1,31 @@
+.learning {
+    .container-fluid {
+        background: url(../img/section_learning/background.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding: 50px 0;
+
+        .container {
+            display: block;
+            flex-direction: column;
+
+            .learning-title {
+                font-weight: 300;
+                text-transform: uppercase;
+                color: $color1;
+                font-size: $fsize5;
+                margin: 0 0;
+            };
+
+            .learning-items {
+                font-size: $fsize1;
+                max-width: 760px;
+                font-family: $font3;
+
+                p {padding-bottom: 20px;};
+
+                @include grayBtn;
+            };
+        };
+    };
+};

@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./scss/styles.css">
 </head>
 
 <body>
-    <!-- Header -->
+
     <header>
         <div class="container">
             <div class="nav-logo">
@@ -40,12 +40,11 @@
     </header>
 
     <main>
-        <!-- Images container -->
         <div class="image-container container-fluid">
             <div class="v-container container">
                 
                 <div class="thumbnail-text">
-                    <h1>Tiiu Teesalu</h1>
+                    <h2>Tiiu Teesalu</h2>
                     <p>Elu sõja-aastatel Saksamaa põgenikelaagrites</p>
                 </div>
                 
@@ -72,7 +71,7 @@
             </div>
         </div>
 
-        <!-- Searchbar -->
+
         <div class="searchbar container-fluid">
             <div class="container">
                 <input type="text">
@@ -80,30 +79,208 @@
             </div>
         </div>
 
-        <!-- Article -->
-        <section class="container-fluid">
-            <div class="container">
-                <h1 id="nonBold">ME KÕIK PÄRIME</h1>
-                <h1>OMA KULTUURI</h1>
-            </div>
-            <div class="container">
-                <div class="text-wrap">
-                    <p>Igaühel meist on oma lugu ja oma roll teiste lugudes. Kõik me oleme kellegi lapsed ja mingi piirkonna elanikud, kõik me pärime oma kultuuri, kodukoha ja perekonna pärandi. Eesti lugu, kogu me lugu, moodustub erinevate Eesti inimeste lugudest.</p>
-                    <p>Need lood ei edasta minevikust täielikku pilti, vaid annavad seda edasi läbi rääkija objektiivi, mis võib olla vägagi erinev meie enda omast. Neid lugusid kuulates kogeme maailma teistsugusel, vahest harjumatul viisil. Pealtnäha olemegi erinevad, kordumatud. See, mis aga peitub igas inimeses sügaval sisimas, on meil ühine.</p>
-                    <p>Kogu Me Lugu on algatus koguda, uurida ja jagada Eesti perede lugusid. Algatuse raames kogutakse, talletatakse ja levitatakse Nõukogude ja Saksa okupatsioonide ajal Eestis elanud, nimetatud võimude eest Eestist põgenenud või nende tegevuse tulemusena Eestisse sattunud inimeste ning nende järeltulijate mälestusi ja elulugusid.</p>
-                    <p>Me Lugu projekti algataja oli 2008. aastal Tallinnas asutatud Sihtasutus Unitas, mis keskendus ajaloohariduse ja inimõiguste kultuuri arendamisele. Ta kuulus Euroopa Mälu ja Süüme Koostöökogu asutajaliikmete hulka ning tema eesmärk oli totalitaarsete režiimide ja ideoloogiate inimvaenulikkuse teadvustamine ja nende kuritegude rahvusvahelise hukkamõistmise taotlemine. 2017. aastal ühines Sihtasutus Unitas Eesti Mälu Instituudiga.</p>
+        <section class="about-text">
+            <div class="container-fluid">
+                <div class="container headText">
+                    <h2>ME KÕIK PÄRIME</h2>
+                    <h2 class="headingH"><strong>OMA KULTUURI</strong></h2>
+                </div>
+                <div class="container">
+            
+                    <div class="text-wrap">
+                        <p>Igaühel meist on oma lugu ja oma roll teiste lugudes. Kõik me oleme kellegi lapsed ja mingi piirkonna elanikud, kõik me pärime oma kultuuri, kodukoha ja perekonna pärandi. Eesti lugu, kogu me lugu, moodustub erinevate Eesti inimeste lugudest.</p>
+                        <p>Need lood ei edasta minevikust täielikku pilti, vaid annavad seda edasi läbi rääkija objektiivi, mis võib olla vägagi erinev meie enda omast. Neid lugusid kuulates kogeme maailma teistsugusel, vahest harjumatul viisil. Pealtnäha olemegi erinevad, kordumatud. See, mis aga peitub igas inimeses sügaval sisimas, on meil ühine.</p>
+                        <p>Kogu Me Lugu on algatus koguda, uurida ja jagada Eesti perede lugusid. Algatuse raames kogutakse, talletatakse ja levitatakse Nõukogude ja Saksa okupatsioonide ajal Eestis elanud, nimetatud võimude eest Eestist põgenenud või nende tegevuse tulemusena Eestisse sattunud inimeste ning nende järeltulijate mälestusi ja elulugusid.</p>
+                        <p>Me Lugu projekti algataja oli 2008. aastal Tallinnas asutatud Sihtasutus Unitas, mis keskendus ajaloohariduse ja inimõiguste kultuuri arendamisele. Ta kuulus Euroopa Mälu ja Süüme Koostöökogu asutajaliikmete hulka ning tema eesmärk oli totalitaarsete režiimide ja ideoloogiate inimvaenulikkuse teadvustamine ja nende kuritegude rahvusvahelise hukkamõistmise taotlemine. 2017. aastal ühines Sihtasutus Unitas Eesti Mälu Instituudiga.</p>
 
-                    <p id="lastSent">Iga lugu on omapärane, samas osa suuremast loost. Iga lugu on Eesti lugu ja ühtlasi kogu inimkonna lugu.</p>
+                        <p id="lastSent">Iga lugu on omapärane, samas osa suuremast loost. Iga lugu on Eesti lugu ja ühtlasi kogu inimkonna lugu.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Map -->
 
+        <div class="openlayer-maps">
+            <div class="container-fluid">
+                <div id="map" class="map"></div>
+            </div>
+        </div>
+        
+        <section class="learning">
+            <div class="container-fluid">
+                <div class="container">
+                    <h2 class="learning-title">Õppematerjalid</h2>
+                    <div class="learning-items">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet consequuntur provident consectetur debitis qui.</p>
+                    <button>Loe lähemalt</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="contact">
+            <div class="container-fluid">
+                <div class="container">
+                     <h2 class="contact-title">Võtke meiega ühendust</h2>
+                     <div class="contact-items">
+                         <p>Etiam porta sem malesuada magna mollis euismod. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                         <p class="contact-email"><img src="./img/envelope.png" alt=""> info@kogumelugu.ee</p>
+                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-people">
+            <div class="container-fluid">
+                <div class="container">
+                    <h2 class="tegijad-title">Tegijad</h2>
+                    <div class="tegijad-cards">
+                        <div class="card">
+                            <img src="/img/section-people/Oval 2.png" alt="">
+                            <h4>Meri Mets</h4>
+                            <p><strong>Juhataja</strong></p>
+                            <p>mari.mets@kogumelugu.ee</p>
+                            <p>+372 567 89 123</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="/img/section-people/Oval 2.png" alt="">
+                            <h4>Meri Mets</h4>
+                            <p><strong>Juhataja</strong></p>
+                            <p>mari.mets@kogumelugu.ee</p>
+                            <p>+372 567 89 123</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="/img/section-people/Oval 2.png" alt="">
+                            <h4>Meri Mets</h4>
+                            <p><strong>Juhataja</strong></p>
+                            <p>mari.mets@kogumelugu.ee</p>
+                            <p>+372 567 89 123</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="/img/section-people/Oval 2.png" alt="">
+                            <h4>Meri Mets</h4>
+                            <p><strong>Juhataja</strong></p>
+                            <p>mari.mets@kogumelugu.ee</p>
+                            <p>+372 567 89 123</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="/img/section-people/Oval 2.png" alt="">
+                            <h4>Meri Mets</h4>
+                            <p><strong>Juhataja</strong></p>
+                            <p>mari.mets@kogumelugu.ee</p>
+                            <p>+372 567 89 123</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="/img/section-people/Oval 2.png" alt="">
+                            <h4>Meri Mets</h4>
+                            <p><strong>Juhataja</strong></p>
+                            <p>mari.mets@kogumelugu.ee</p>
+                            <p>+372 567 89 123</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners">
+            <div class="container-fluid">
+                <div class="container">
+                    <h2>Koostööpartnerid</h2>
+                    <div class="partners-list">
+                        <ul>
+                            <li><a href="#">Ajapaik</a></li>
+                            <li><a href="#">Black Ribbon Day Foundation</a></li>
+                            <li><a href="#">Eesti Diasporaa Akadeemia</a></li>
+                            <li><a href="#">Eesti Mälu Instituut</a></li>
+                            <li><a href="#">Eesti Vabariik 100</a></li>
+                            <li><a href="#">Georg Eckert Institute</a></li>
+                            <li><a href="#">Kaasaegse Kunsti Eesti Keskus</a></li>
+                            <li><a href="#">Konrad Adenaueri Sihtasutus</a></li>
+                            <li><a href="#">Naiskodukaitse</a></li>
+                            <li><a href="#">Reklaamiagentuur MUST</a></li>
+                            <li><a href="#">Stanfordi Ülikooli Raamatukogu</a></li>
+                            <li><a href="#">VEMU/Eesti Õppetöö Keskus</a></li>
+                            <li><a href="#">Eva Sepping</a></li>
+                            <li><a href="#">Avatud Vabariik</a></li>
+                            <li><a href="#">EUROCLIO</a></li>
+                            <li><a href="#">Eesti Kirjandusmuuseum</a></li>
+                            <li><a href="#">Eesti Rahva Muuseum</a></li>
+                            <li><a href="#">Entusiastid OÜ</a></li>
+                            <li><a href="#">Hooandja</a></li>
+                            <li><a href="#">Kilomeeter Skulptuuri</a></li>
+                            <li><a href="#">MTÜ Tulipisar</a></li>
+                            <li><a href="#">Okupatsioonide Muuseum</a></li>
+                            <li><a href="#">Ruudu Rahumaru</a></li>
+                            <li><a href="#">Tallinna Ülikool</a></li>
+                            <li><a href="#">Anna Hints</a></li>
+                            <li><a href="#">Gustav Liblik</a></li>
+                            <li><a href="#">Baltic Heritage Network</a></li>
+                            <li><a href="#">Education Development Centre</a></li>
+                            <li><a href="#">Eesti Kunstimuuseum</a></li>
+                            <li><a href="#">Eesti Rahvusringhääling</a></li>
+                            <li><a href="#">Euroopa Parlamendi Saadiku Tunne Kelami Büroo</a></li>
+                            <li><a href="#">Inimõiguste Instituut</a></li>
+                            <li><a href="#">Kino Artis</a></li>
+                            <li><a href="#">Murtud Rukkilille Ühing</a></li>
+                            <li><a href="#">Rahvusarhiiv</a></li>
+                            <li><a href="#">Saksamaa Liitvabariigi Suursaatkond</a></li>
+                            <li><a href="#">Tartu Ülikool</a></li>
+                            <li><a href="#">Edward von Lõngus</a></li>
+                            <li><a href="#">Ian Concannon</a></li>  
+                        </ul>
+                    </div>
+
+                    <h3>Suurtoetajad</h3>
+                    <div class="supporters-list">
+                        <div class="supporter">
+                            <h3>Amalfi</h3>
+                        </div>
+
+                        <div class="supporter">
+                            <img src="/img/section-partners/EKRY.png" alt="">
+                        </div>
+
+                        <div class="supporter">
+                            <img src="/img/section-partners/Erasmus.png" alt="">
+                        </div>
+
+                        <div class="supporter">
+                            <img src="/img/section-partners/ERC.png" alt="">
+                        </div>
+
+                        <div class="supporter">
+                            <img src="/img/section-partners/HaridusMin.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="supporters-list">
+                        <div class="supporter">
+                            <img src="/img/section-partners/KaitseMin.png" alt="">
+                        </div>
+
+                        <div class="supporter">
+                            <h3>Kistler-Ritso Sihtasutus</h3>
+                        </div>
+
+                        <div class="supporter">
+                            <img src="/img/section-partners/KultMin.png" alt="">
+                        </div>
+
+                        <div class="supporter">
+                            <img src="/img/section-partners/SiseMin.png" alt="">
+                        </div>
+                    </div>
+
+                </div>    
+            </div>
+        </section>
     </main>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             
@@ -138,6 +315,8 @@
         </div>
     </footer>
 
-<script></script>
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/build/ol.js"></script>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

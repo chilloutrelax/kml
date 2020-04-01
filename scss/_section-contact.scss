@@ -1,0 +1,32 @@
+.contact {
+    .container-fluid {
+        background-color: $color2;
+        padding: 50px 0;
+        .container {
+            display: block;
+            flex-direction: column;
+
+            .contact-title {
+                font-weight: 300;
+                text-transform: uppercase;
+                color: $color1;
+                font-size: $fsize5;
+                margin: 0 0;
+            };
+
+            .contact-items {
+                font-size: $fsize1;
+                font-family: $font3;
+
+                p {padding-bottom: 20px;}
+
+                .contact-email {font-size: $fsize2;};
+
+                img {
+                    width: 30px;
+                    padding-right: 10px;
+                };
+            };
+        };
+    };
+};

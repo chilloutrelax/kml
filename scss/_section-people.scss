@@ -1,0 +1,48 @@
+.section-people {
+    .container-fluid {
+        background: #F7F7F7;
+        padding: 50px 0;
+
+        .container {
+            display: block;
+            flex-direction: column;
+
+            .tegijad-title {
+                font-weight: 300;
+                text-transform: uppercase;
+                color: $color1;
+                font-size: $fsize5;
+                margin: 0;
+                padding-bottom: 30px;
+            };
+
+            .tegijad-cards {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                align-items: center;
+
+                .card {
+                    width: 240px;
+                    padding-left: 40px;
+                    padding-bottom: 40px;
+
+                    h4 {
+                        font-family: inherit;
+                        text-transform: uppercase;
+                        font-size: $fsize4;
+                        font-weight: 300;
+                        margin:0;
+                    };
+
+                    p {
+                        font-family: $font3;
+                        font-size: $fsize1;
+                    };
+                };
+            };
+        };
+    };
+};
