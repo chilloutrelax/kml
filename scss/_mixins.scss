@@ -74,3 +74,33 @@
         }
     }
 }
+
+@mixin gradientOverlay--blue {
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        background: rgb(2,0,36);
+        background: linear-gradient(270deg, rgba(2,0,36,0) 45%, rgba(36,43,69,0.908000700280112) 100%);
+    };
+};
+
+@mixin gradientOverlay--white {
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        z-index: 1;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 2%, rgba(255,255,255,0) 24%);
+    };
+};

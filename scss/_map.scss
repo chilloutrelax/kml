@@ -1,5 +1,8 @@
 .openlayer-maps {
-    .container-fluid {
+
+    .map-fluid{
+        @include gradientOverlay--white;
+
         .map {
             height: 400px;
             width:100%;

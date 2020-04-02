@@ -1,0 +1,31 @@
+.share-container {
+    height: 100px;
+    .share-btn {
+        color: #fff;
+        text-align: center;
+        border-radius: 30px;
+        height: 60px;
+        width: 60px;
+        font-size: 28px;
+        line-height: 60px;
+        background-color: #3fbebc;
+        -webkit-box-shadow: 0 0 60px 0 rgba(0,0,0,.4);
+        box-shadow: 0 0 60px 0 rgba(0,0,0,.4);
+        position: relative;
+        cursor: pointer;
+        -webkit-transition: all .2s;
+        transition: all .2s;
+
+        .fas {
+            display: inline-block;
+           
+            
+            &::before {
+                content: "\f1e0";
+                font-family: "Font Awesome 5 Free";
+            }
+
+        
+        }
+    }       
+}

@@ -54,6 +54,7 @@ header {
   left: 0;
   padding: 20px;
   background: #fff;
+  z-index: 200;
 }
 
 header .container {
@@ -69,6 +70,7 @@ header .container .nav-logo {
           justify-content: center;
   width: 160px;
   height: 30px;
+  z-index: 150000;
 }
 
 header .container .nav-logo img {
@@ -121,13 +123,29 @@ header .container .lang {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: auto;
 }
 
-header .container .lang a {
+header .container .lang ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style-type: none;
+}
+
+header .container .lang ul li {
+  padding-right: 10px;
+  padding-left: 5px;
+}
+
+header .container .lang ul li a {
   text-transform: uppercase;
   vertical-align: baseline;
   text-decoration: none;
@@ -135,12 +153,13 @@ header .container .lang a {
   font-size: 14px;
 }
 
-header .container .lang a:hover {
+header .container .lang ul li a:hover {
   color: #3FBEBC;
 }
 
-header .container .lang a {
-  font-family: "Work Sans", sans-serif;
+header .container .lang ul li a {
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
 }
 
 header .container .lang button {
@@ -163,10 +182,22 @@ header .container .lang button {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
 }
 
-.image-container .v-container {
+.image-container::before {
+  content: "";
+  position: absolute;
+  display: block;
+  z-index: 1;
+  top: 0;
+  left: 0;
   width: 100%;
+  max-width: 100%;
+  height: 100%;
+  background: #020024;
+  background: -webkit-gradient(linear, right top, left top, color-stop(45%, rgba(2, 0, 36, 0)), to(rgba(36, 43, 69, 0.908001)));
+  background: linear-gradient(270deg, rgba(2, 0, 36, 0) 45%, rgba(36, 43, 69, 0.908001) 100%);
 }
 
 .image-container .v-container .thumbnail-text {
@@ -186,10 +217,11 @@ header .container .lang button {
       -ms-flex-positive: 1;
           flex-grow: 1;
   color: #ffffff;
+  z-index: 10;
 }
 
-.image-container .v-container .thumbnail-text img {
-  width: 60px;
+.image-container .v-container .thumbnail-text:before {
+  content: url("../img/vbar/Play.png");
 }
 
 .image-container .v-container .thumbnail-text h2 {
@@ -216,6 +248,7 @@ header .container .lang button {
   height: 160px;
   margin: 0 auto;
   padding: 0;
+  z-index: 10;
 }
 
 .image-container .v-container .container .thumbnail-bottom a {
@@ -301,7 +334,24 @@ header .container .lang button {
   background: url(../img/section_about/Image.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding: 100px 0;
+  position: relative;
+}
+
+.about-text .container-fluid::before {
+  content: "";
+  position: absolute;
+  display: block;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  background: #020024;
+  background: -webkit-gradient(linear, right top, left top, color-stop(45%, rgba(2, 0, 36, 0)), to(rgba(36, 43, 69, 0.908001)));
+  background: linear-gradient(270deg, rgba(2, 0, 36, 0) 45%, rgba(36, 43, 69, 0.908001) 100%);
 }
 
 .about-text .container-fluid .container {
@@ -324,16 +374,19 @@ header .container .lang button {
   font-weight: 300;
   margin: 0;
   padding: 0;
+  z-index: 10;
 }
 
 .about-text .container-fluid .container .text-wrap {
   max-width: 760px;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
+  z-index: 10;
 }
 
 .about-text .container-fluid .container .text-wrap p {
-  color: #fff;
+  color: #ffffff;
+  line-height: 25px;
 }
 
 .about-text .container-fluid .container .text-wrap #lastSent {
@@ -379,7 +432,20 @@ header .container .lang button {
   padding-right: 10px;
 }
 
-.openlayer-maps .container-fluid .map {
+.openlayer-maps .map-fluid::before {
+  content: "";
+  position: absolute;
+  display: block;
+  z-index: 1;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  background: white;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(2%, white), color-stop(24%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(180deg, white 2%, rgba(255, 255, 255, 0) 24%);
+}
+
+.openlayer-maps .map-fluid .map {
   height: 400px;
   width: 100%;
   border: 0px;
@@ -387,12 +453,13 @@ header .container .lang button {
 
 .learning .container-fluid {
   background: url(../img/section_learning/background.png);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
   padding: 50px 0;
 }
 
-.learning .container-fluid .container {
+.learning .container-fluid .learning__container {
   display: block;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -400,7 +467,7 @@ header .container .lang button {
           flex-direction: column;
 }
 
-.learning .container-fluid .container .learning-title {
+.learning .container-fluid .learning__container .learning-title {
   font-weight: 300;
   text-transform: uppercase;
   color: #242B45;
@@ -408,17 +475,17 @@ header .container .lang button {
   margin: 0 0;
 }
 
-.learning .container-fluid .container .learning-items {
+.learning .container-fluid .learning__container .learning-items {
   font-size: 14px;
   max-width: 760px;
   font-family: "Open Sans", sans-serif;
 }
 
-.learning .container-fluid .container .learning-items p {
+.learning .container-fluid .learning__container .learning-items p {
   padding-bottom: 20px;
 }
 
-.learning .container-fluid .container .learning-items button {
+.learning .container-fluid .learning__container .learning-items button {
   background: none;
   border: 1px solid #242B45;
   border-radius: 5px;
@@ -431,7 +498,7 @@ header .container .lang button {
   height: 40px;
 }
 
-.learning .container-fluid .container .learning-items button:hover {
+.learning .container-fluid .learning__container .learning-items button:hover {
   background: #242B45;
   color: #ffffff;
 }
@@ -585,6 +652,7 @@ header .container .lang button {
 
 .support .container-fluid {
   background: url(../img/section-support/support-bg.png);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px 0;
@@ -612,9 +680,16 @@ header .container .lang button {
   color: #242B45;
 }
 
+.support .container-fluid .container .support-1 .support-text .headingH {
+  margin-top: -30px;
+}
+
 .support .container-fluid .container .support-1 .support-text p {
   font-family: "Open Sans", sans-serif;
+  color: #242B45;
   font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 30px;
 }
 
 .support .container-fluid .container .support-1 .support-text button {
@@ -629,6 +704,10 @@ header .container .lang button {
   font-size: 20px;
   font-weight: 600;
   font-family: inherit;
+}
+
+.support .container-fluid .container .support-1 .support-text button {
+  margin-top: 40px;
 }
 
 .support .container-fluid .container .support-2 .support-card {
@@ -655,10 +734,46 @@ header .container .lang button {
 
 .support .container-fluid .container .support-2 .support-bank h4 {
   text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 40px;
+  line-height: 60px;
+  margin-bottom: 0;
+  padding: 0;
 }
 
 .support .container-fluid .container .support-2 .support-bank p {
   font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.share-container {
+  height: 100px;
+}
+
+.share-container .share-btn {
+  color: #fff;
+  text-align: center;
+  border-radius: 30px;
+  height: 60px;
+  width: 60px;
+  font-size: 28px;
+  line-height: 60px;
+  background-color: #3fbebc;
+  -webkit-box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.4);
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.share-container .share-btn .fas {
+  display: inline-block;
+}
+
+.share-container .share-btn .fas::before {
+  content: "\f1e0";
+  font-family: "Font Awesome 5 Free";
 }
 
 footer {

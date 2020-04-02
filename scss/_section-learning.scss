@@ -1,11 +1,13 @@
 .learning {
+    
     .container-fluid {
         background: url(../img/section_learning/background.png);
+        background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
         padding: 50px 0;
 
-        .container {
+        .learning__container {
             display: block;
             flex-direction: column;
 

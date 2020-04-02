@@ -4,11 +4,12 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
+
+    @include gradientOverlay--blue;
 
     .v-container {
-        width: 100%;
         
-
         .thumbnail-text {
             position: relative;
             display: flex;
@@ -17,9 +18,10 @@
             width: 1160px;
             flex-grow: 1;
             color: $color3;
+            z-index: 10;
 
-            img {
-                width: 60px;
+            &:before {
+                content: url('../img/vbar/Play.png');
             }
 
             h2{
@@ -28,6 +30,7 @@
                 font-weight: 300;
                 margin: 0;
             }
+
 
             p{
                 font-family: $font3;
@@ -46,6 +49,7 @@
                 height: 160px;
                 margin: 0 auto;
                 padding: 0;
+                z-index: 10;
 
             @include imageHyper;
            };

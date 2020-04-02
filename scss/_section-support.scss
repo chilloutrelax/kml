@@ -1,6 +1,7 @@
 .support {
     .container-fluid {
         background: url(../img/section-support/support-bg.png);
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         padding: 50px 0;
@@ -19,14 +20,24 @@
                         text-transform: uppercase;
                         font-size: $fsize5;
                         color: $color1;
+                    };
+
+                    .headingH{
+                        margin-top: -30px; 
                     }
     
                     p {
                         font-family: $font3;
+                        color: $color1;
                         font-size: $fsize8;
-                    }
+                        margin-bottom: 20px;
+                        line-height: 30px;
+                        
+                    };
     
                     @include greenBtn;
+
+                    button {margin-top: 40px;}
                 };
             };
 
@@ -56,9 +67,18 @@
                 .support-bank {
                     h4 {
                         text-transform: uppercase;
+                        font-size: $fsize2;
+                        margin-bottom: 40px;
+                        line-height: 60px;
+                        margin-bottom: 0;
+                        padding: 0;
                     }
 
-                    p {font-family: $font3;}
+                    p {
+                        font-family: $font3;
+                        font-size: $fsize8;
+
+                    }
                 }
             };
 
