@@ -1,3 +1,21 @@
+.sticky {
+    position: fixed;
+    width: 100%;
+
+    .container {
+        .nav-logo {
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 90px;
+                transition: 0.2s;
+            }
+        }
+    }
+
+};
+
 header {
     margin: 0 auto;
     width: 100%;
@@ -6,7 +24,7 @@ header {
     padding: 20px;
     background: #fff;
     z-index: 200;
-
+    
     .container {
 
         height: 60px;
@@ -22,6 +40,7 @@ header {
                 position: absolute;
                 vertical-align: baseline;
                 width: 160px;
+                transition: 0.4s;
             };
         };
 

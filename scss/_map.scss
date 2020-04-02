@@ -1,7 +1,23 @@
 .openlayer-maps {
 
     .map-fluid{
-        @include gradientOverlay--white;
+        position: relative;;
+        
+        @include gradientOverlay--white; 
+
+        h2 {
+            position: absolute;
+            z-index: 10;
+            top: 100px;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            width: 1200px;
+            font-weight: 300;
+            text-transform: uppercase;
+            color: $color1;
+            font-size: $fsize5;
+        }
 
         .map {
             height: 400px;
