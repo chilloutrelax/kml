@@ -6,13 +6,8 @@
             display: block;
             flex-direction: column;
 
-            .contact-title {
-                font-weight: 300;
-                text-transform: uppercase;
-                color: $color1;
-                font-size: $fsize5;
-                margin: 0 0;
-            };
+
+            @include sectionHeading;
 
             .contact-items {
                 font-size: $fsize1;

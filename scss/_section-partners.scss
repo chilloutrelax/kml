@@ -7,14 +7,7 @@
             display: block;
             flex-direction: column;
 
-            h2 {
-                font-weight: 300;
-                text-transform: uppercase;
-                color: $color1;
-                font-size: $fsize5;
-                margin: 0;
-                padding-bottom: 30px;
-            }
+            @include sectionHeading;
 
             .partners-list {
                 display: flex;

@@ -17,3 +17,8 @@
 @import './section-support';
 @import './sharebtn';
 @import './footer';
+
+
+body.modal-open {
+    overflow: hidden;
+}

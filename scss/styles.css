@@ -91,7 +91,7 @@ header .container .nav-logo {
           justify-content: center;
   width: 160px;
   height: 30px;
-  z-index: 150000;
+  z-index: 999;
 }
 
 header .container .nav-logo img {
@@ -429,12 +429,13 @@ header .container .lang button {
           flex-direction: column;
 }
 
-.contact .container-fluid .container .contact-title {
+.contact .container-fluid .container h2 {
   font-weight: 300;
   text-transform: uppercase;
   color: #242B45;
   font-size: 60px;
-  margin: 0 0;
+  margin: 0;
+  padding-bottom: 30px;
 }
 
 .contact .container-fluid .container .contact-items {
@@ -470,10 +471,6 @@ header .container .lang button {
   background: white;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(33%, rgba(255, 255, 255, 0.55506)), color-stop(75%, rgba(255, 255, 255, 0.927609)));
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.55506) 33%, rgba(255, 255, 255, 0.927609) 75%);
-}
-
-.openlayer-maps .map-fluid::before:hover {
-  visibility: 0;
 }
 
 .openlayer-maps .map-fluid h2 {
@@ -512,12 +509,13 @@ header .container .lang button {
           flex-direction: column;
 }
 
-.learning .container-fluid .learning__container .learning-title {
+.learning .container-fluid .learning__container h2 {
   font-weight: 300;
   text-transform: uppercase;
   color: #242B45;
   font-size: 60px;
-  margin: 0 0;
+  margin: 0;
+  padding-bottom: 30px;
 }
 
 .learning .container-fluid .learning__container .learning-items {
@@ -570,14 +568,10 @@ header .container .lang button {
   padding-bottom: 30px;
 }
 
-.section-people .container-fluid .container .tegijad-cards {
+.section-people .container-fluid .container .card__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: center;
@@ -589,13 +583,17 @@ header .container .lang button {
   align-items: center;
 }
 
-.section-people .container-fluid .container .tegijad-cards .card {
+.section-people .container-fluid .container .card__container .card {
   width: 240px;
   padding-left: 40px;
   padding-bottom: 40px;
 }
 
-.section-people .container-fluid .container .tegijad-cards .card h4 {
+.section-people .container-fluid .container .card__container .card .modalButton {
+  cursor: pointer;
+}
+
+.section-people .container-fluid .container .card__container .card .card__title {
   font-family: inherit;
   text-transform: uppercase;
   font-size: 30px;
@@ -603,9 +601,135 @@ header .container .lang button {
   margin: 0;
 }
 
-.section-people .container-fluid .container .tegijad-cards .card p {
+.section-people .container-fluid .container .card__container .card .card__body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
+}
+
+.section-people .container-fluid .container .modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  z-index: 1000;
+  background: rgba(91, 89, 89, 0.449);
+}
+
+.section-people .container-fluid .container .modal .close {
+  float: right;
+  cursor: pointer;
+}
+
+.section-people .container-fluid .container .modal .modal__container {
+  position: absolute;
+  width: 1120px;
+  border: 1px solid rgba(128, 128, 128, 0.176);
+  border-radius: 10px;
+  padding: 40px;
+  background: #fff;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.section-people .container-fluid .container .modal .modal__container .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 60px;
+}
+
+.section-people .container-fluid .container .modal .modal__container .modal__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 180px;
+          flex: 0 0 180px;
+}
+
+.section-people .container-fluid .container .modal .modal__container .modal__heading .modal__image {
+  margin-right: 40px;
+}
+
+.section-people .container-fluid .container .modal .modal__container .modal__heading .modal__image img {
+  width: 100%;
+}
+
+.section-people .container-fluid .container .modal .modal__container .modal__heading .modal__content h2 {
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #242B45;
+  font-size: 60px;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.section-people .container-fluid .container .modal .modal__container .modal__heading .modal__content h2 {
+  padding-bottom: 0;
+}
+
+.section-people .container-fluid .container .modal .modal__container .modal__heading .modal__content .modal__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-people .container-fluid .container .modal .modal__container .modal__heading .modal__content .modal__body .modal__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-people .container-fluid .container .modal .modal__container .modal__heading .modal__content .modal__body .modal__contact img {
+  width: 20px;
+}
+
+.section-people .container-fluid .container .modal .modal__container .modal__heading .modal__content .modal__body .modal__contact p {
+  padding-right: 40px;
+}
+
+.section-people .container-fluid .container .modal .modal__container .modal__heading .modal__content .modal__body .modal__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.section-people .container-fluid .container .modal .modal__container .modal__heading .modal__content .modal__body .modal__info .modal__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.section-people .container-fluid .container .modal .modal__container .modal__heading .modal__content .modal__body .modal__info .modal__text h3, .section-people .container-fluid .container .modal .modal__container .modal__heading .modal__content .modal__body .modal__info .modal__text p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
 }
 
 .partners .container-fluid {
@@ -863,5 +987,9 @@ footer .container .contact-info .contact a {
 
 footer .container .social {
   margin-left: auto;
+}
+
+body.modal-open {
+  overflow: hidden;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -11,13 +11,7 @@
             display: block;
             flex-direction: column;
 
-            .learning-title {
-                font-weight: 300;
-                text-transform: uppercase;
-                color: $color1;
-                font-size: $fsize5;
-                margin: 0 0;
-            };
+            @include sectionHeading;
 
             .learning-items {
                 font-size: $fsize1;
