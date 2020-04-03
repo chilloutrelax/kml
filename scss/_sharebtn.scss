@@ -1,31 +1,71 @@
 .share-container {
-    height: 100px;
+    position: fixed;
+    bottom: 200px;
+    right: 100px;
+    z-index: 100;
+    font-family: "Font Awesome 5 Free";
+
+
+    .social__btn {
+        display: none;
+        transition: all 0.4s ease-in-out;
+ 
+        a {
+            background: $color3;
+            color: $color3;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            font-size: $fsize6;
+            line-height: 40px;
+            text-align: center;
+            box-shadow: 0 0 40px rgba(36, 43, 69, 0.258);
+        }
+
+        .tumblr {
+            background-color: $color7;
+        }
+        
+        .twitter {
+            background-color: $color6;
+        }
+
+        .facebook {
+            background-color: $color5;
+        }
+    }
+
     .share-btn {
-        color: #fff;
-        text-align: center;
-        border-radius: 30px;
         height: 60px;
         width: 60px;
-        font-size: 28px;
-        line-height: 60px;
-        background-color: #3fbebc;
-        -webkit-box-shadow: 0 0 60px 0 rgba(0,0,0,.4);
-        box-shadow: 0 0 60px 0 rgba(0,0,0,.4);
-        position: relative;
+        background: $color2;
+        box-shadow: 0 0 20px rgba(36, 43, 69, 0.258);
+        border-radius: 30px;
         cursor: pointer;
-        -webkit-transition: all .2s;
-        transition: all .2s;
+        color: $color3;
+        text-align: center;
+        line-height: 60px;
+        font-size: $fsize9;
+        
 
-        .fas {
+        .fa-share-alt {
             display: inline-block;
            
             
             &::before {
                 content: "\f1e0";
-                font-family: "Font Awesome 5 Free";
             }
+        }
 
-        
+        .fa-times {
+            display: none;
+            
+            &::before {
+                content: "\f00d";
+            }
         }
     }       
 }

@@ -20,22 +20,33 @@
             color: $color3;
             z-index: 10;
 
-            &:before {
-                content: url('../img/vbar/Play.png');
-            }
+            .thumb__fix1 {
+                display: flex;
+                flex-direction: row;      
 
-            h2{
-                font-size: $fsize4;
-                text-transform: uppercase;
-                font-weight: 300;
-                margin: 0;
-            }
+                &::before {
+                    content: url('../img/vbar/Play.png');
+                    padding-right: 40px;
+
+                    &:hover {
+                        background: white;
+                    }
+                }
+            
+                h2{
+                    font-size: $fsize4;
+                    text-transform: uppercase;
+                    font-weight: 300;
+                    margin: 0;
+                }
 
 
-            p{
-                font-family: $font3;
-                font-size: $fsize1;
-                margin: 0;
+                p{
+                    font-family: $font3;
+                    font-size: $fsize1;
+                    margin: 0;
+                }
+
             }
 
         };

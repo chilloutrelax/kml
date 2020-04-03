@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Kogu Me Lugu</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" href="./scss/styles.css">
 </head>
 
@@ -44,8 +44,13 @@
         <div class="image-container container-fluid">
             <div class="v-container container">
                 <div class="thumbnail-text">
-                    <h2>Tiiu Teesalu</h2>
-                    <p>Elu sõja-aastatel Saksamaa põgenikelaagrites</p>
+                    <div class="thumb__fix1">
+                    <div class="thumb__fix">
+                        <h2>Tiiu Teesalu</h2>
+                        <p>Elu sõja-aastatel Saksamaa põgenikelaagrites</p>
+                    </div>
+                    </div>
+                    
                 </div>
                 
                 <div class="container">
@@ -103,7 +108,7 @@
 
         <div class="openlayer-maps">
             <div class="map-fluid container-fluid">
-                <div class="container-fluid">
+                <div id="mapGradient" class="mapGradient">
                     <h2>Lood ümber <strong>Maailma</strong></h2>
                 </div>
 
@@ -389,11 +394,18 @@
             </div>
         </section>
 
-        <!-- <div class="share-container">
-            <div class="share-btn">
-                <i class="fas fa-share-alt"></i>
+        <div class="share-container">
+            <div id="socialBtn" class="social__btn">
+                <a class="tumblr" href="http://www.tumblr.com"><i class="fab fa-tumblr-square"></i></a>
+                <a class="twitter" href="http://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                <a class="facebook" href="htto://www.facebook.com"><i class="fab fa-facebook"></i></a>
             </div>
-        </div> -->
+
+            <div class="share-btn">
+                <i id="share" class="fas fa-share-alt"></i>
+                <i id="times" class="fas fa-times"></i>
+            </div>
+        </div>
 
     </main>
 
@@ -436,5 +448,6 @@
     <script src="js/header.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/map.js"></script>
+    <script src="js/sharebtn.js"></script>
 </body>
 </html>

@@ -1,32 +1,41 @@
 .openlayer-maps {
 
     .map-fluid{
-        position: relative;;
-        
-        @include gradientOverlay--white; 
+        position: relative;
 
-        h2 {
-            position: absolute;
-            z-index: 10;
-            top: 100px;
-            margin: 0 auto;
-            left: 0;
-            right: 0;
-            width: 1200px;
-            font-weight: 300;
-            text-transform: uppercase;
-            color: $color1;
-            font-size: $fsize5;
+        .mapGradient {
+
+            &::before {
+                content: "";
+                position: absolute;
+                display: block;
+                z-index: 9;
+                width: 100%;
+                max-width: 100%;
+                height: 100%;
+                background: rgb(255,255,255);
+                background: linear-gradient(0deg, rgba(255,255,255,0.5550595238095238) 33%, rgba(255,255,255,0.927608543417367) 75%);
+            };
+    
+            h2 {
+                position: absolute;
+                z-index: 10;
+                top: 100px;
+                margin: 0 auto;
+                left: 0;
+                right: 0;
+                width: 1200px;
+                font-weight: 300;
+                text-transform: uppercase;
+                color: $color1;
+                font-size: $fsize5;
+            }
         }
-
 
         .map {
             height: 400px;
             width:100%;
             border: 0px;
-
-            
-
         }
     }
 };

@@ -243,18 +243,33 @@ header .container .lang button {
   z-index: 10;
 }
 
-.image-container .v-container .thumbnail-text:before {
-  content: url("../img/vbar/Play.png");
+.image-container .v-container .thumbnail-text .thumb__fix1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.image-container .v-container .thumbnail-text h2 {
+.image-container .v-container .thumbnail-text .thumb__fix1::before {
+  content: url("../img/vbar/Play.png");
+  padding-right: 40px;
+}
+
+.image-container .v-container .thumbnail-text .thumb__fix1::before:hover {
+  background: white;
+}
+
+.image-container .v-container .thumbnail-text .thumb__fix1 h2 {
   font-size: 30px;
   text-transform: uppercase;
   font-weight: 300;
   margin: 0;
 }
 
-.image-container .v-container .thumbnail-text p {
+.image-container .v-container .thumbnail-text .thumb__fix1 p {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   margin: 0;
@@ -460,7 +475,7 @@ header .container .lang button {
   position: relative;
 }
 
-.openlayer-maps .map-fluid::before {
+.openlayer-maps .map-fluid .mapGradient::before {
   content: "";
   position: absolute;
   display: block;
@@ -473,7 +488,7 @@ header .container .lang button {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.55506) 33%, rgba(255, 255, 255, 0.927609) 75%);
 }
 
-.openlayer-maps .map-fluid h2 {
+.openlayer-maps .map-fluid .mapGradient h2 {
   position: absolute;
   z-index: 10;
   top: 100px;
@@ -916,33 +931,75 @@ header .container .lang button {
 }
 
 .share-container {
-  height: 100px;
+  position: fixed;
+  bottom: 200px;
+  right: 100px;
+  z-index: 100;
+  font-family: "Font Awesome 5 Free";
+}
+
+.share-container .social__btn {
+  display: none;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.share-container .social__btn a {
+  background: #ffffff;
+  color: #ffffff;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+  -webkit-box-shadow: 0 0 40px rgba(36, 43, 69, 0.258);
+          box-shadow: 0 0 40px rgba(36, 43, 69, 0.258);
+}
+
+.share-container .social__btn .tumblr {
+  background-color: #35465C;
+}
+
+.share-container .social__btn .twitter {
+  background-color: #1DA1F2;
+}
+
+.share-container .social__btn .facebook {
+  background-color: #3B5998;
 }
 
 .share-container .share-btn {
-  color: #fff;
-  text-align: center;
-  border-radius: 30px;
   height: 60px;
   width: 60px;
-  font-size: 28px;
-  line-height: 60px;
-  background-color: #3fbebc;
-  -webkit-box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.4);
-  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.4);
-  position: relative;
+  background: #3FBEBC;
+  -webkit-box-shadow: 0 0 20px rgba(36, 43, 69, 0.258);
+          box-shadow: 0 0 20px rgba(36, 43, 69, 0.258);
+  border-radius: 30px;
   cursor: pointer;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  color: #ffffff;
+  text-align: center;
+  line-height: 60px;
+  font-size: 28px;
 }
 
-.share-container .share-btn .fas {
+.share-container .share-btn .fa-share-alt {
   display: inline-block;
 }
 
-.share-container .share-btn .fas::before {
+.share-container .share-btn .fa-share-alt::before {
   content: "\f1e0";
-  font-family: "Font Awesome 5 Free";
+}
+
+.share-container .share-btn .fa-times {
+  display: none;
+}
+
+.share-container .share-btn .fa-times::before {
+  content: "\f00d";
 }
 
 footer {
@@ -987,9 +1044,5 @@ footer .container .contact-info .contact a {
 
 footer .container .social {
   margin-left: auto;
-}
-
-body.modal-open {
-  overflow: hidden;
 }
 /*# sourceMappingURL=styles.css.map */
