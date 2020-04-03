@@ -5,6 +5,11 @@
 
         .mapGradient {
 
+            &:hover {
+                visibility: hidden;
+                pointer-events: none;
+            }
+
             &::before {
                 content: "";
                 position: absolute;

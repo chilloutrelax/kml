@@ -475,6 +475,11 @@ header .container .lang button {
   position: relative;
 }
 
+.openlayer-maps .map-fluid .mapGradient:hover {
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .openlayer-maps .map-fluid .mapGradient::before {
   content: "";
   position: absolute;
