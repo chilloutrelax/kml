@@ -33,12 +33,11 @@ header {
             display: flex;
             justify-content: center;
             width: 160px;
-            height: 30px;
+            height: 50px;
             z-index: 999;
 
             img {
                 position: absolute;
-                vertical-align: baseline;
                 width: 160px;
                 transition: 0.4s;
             };
@@ -47,6 +46,7 @@ header {
         nav {
             display: flex;
             align-items: center;
+            font-family: $font1;
 
             ul {
                 display: flex;
@@ -70,7 +70,7 @@ header {
             align-items: center;
             margin-left: auto;
 
-            ul {
+            .lang__bar {
                 display: flex;
                 margin: 0;
                 padding: 0;
@@ -85,7 +85,6 @@ header {
 
                         a {
                         font-weight: 400;
-                        font-family: $font3;
                         }
                     };
                 };

@@ -2,18 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
-@import './variable';
-@import './mixins';
-@import './layout';
-@import './header';
-@import './videobar';
-@import './searchbar';
-@import './section-about';
-@import './section-contact';
-@import './map';
-@import './section-learning';
-@import './section-people';
-@import './section-partners';
-@import './section-support';
-@import './sharebtn';
-@import './footer';
+@import './abstract/variable';
+@import './abstract/mixins';
+
+@import './layout/layout';
+
+@import './layout/header';
+
+@import './components/videobar';
+@import './components/searchbar';
+@import './components/section-about';
+@import './components/section-contact';
+@import './components/map';
+@import './components/section-learning';
+@import './components/section-people';
+@import './components/section-partners';
+@import './components/section-support';
+@import './components/vidteek';
+
+@import './layout/sharebtn';
+@import './layout/footer';

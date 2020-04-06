@@ -90,13 +90,12 @@ header .container .nav-logo {
       -ms-flex-pack: center;
           justify-content: center;
   width: 160px;
-  height: 30px;
+  height: 50px;
   z-index: 999;
 }
 
 header .container .nav-logo img {
   position: absolute;
-  vertical-align: baseline;
   width: 160px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -109,6 +108,7 @@ header .container nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "Oswald", "Oswald", sans-serif;
 }
 
 header .container nav ul {
@@ -152,7 +152,7 @@ header .container .lang {
   margin-left: auto;
 }
 
-header .container .lang ul {
+header .container .lang .lang__bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,12 +163,12 @@ header .container .lang ul {
   list-style-type: none;
 }
 
-header .container .lang ul li {
+header .container .lang .lang__bar li {
   padding-right: 10px;
   padding-left: 5px;
 }
 
-header .container .lang ul li a {
+header .container .lang .lang__bar li a {
   text-transform: uppercase;
   vertical-align: baseline;
   text-decoration: none;
@@ -176,13 +176,12 @@ header .container .lang ul li a {
   font-size: 14px;
 }
 
-header .container .lang ul li a:hover {
+header .container .lang .lang__bar li a:hover {
   color: #3FBEBC;
 }
 
-header .container .lang ul li a {
+header .container .lang .lang__bar li a {
   font-weight: 400;
-  font-family: "Open Sans", sans-serif;
 }
 
 header .container .lang button {
@@ -331,15 +330,21 @@ header .container .lang button {
 }
 
 .searchbar .container {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  padding: 10px;
+  display: block;
+  padding: 20px 0;
 }
 
-.searchbar .container input {
+.searchbar .container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.searchbar .container form .input__div {
+  margin-right: 20px;
+}
+
+.searchbar .container form .input__div input {
   width: 1050px;
   padding: 10px;
   border: 0;
@@ -348,7 +353,7 @@ header .container .lang button {
   color: #242B45;
 }
 
-.searchbar .container button {
+.searchbar .container form .button__div button {
   background: #3FBEBC;
   width: 90px;
   height: 60px;
@@ -362,10 +367,32 @@ header .container .lang button {
   font-family: inherit;
 }
 
-.searchbar .container button {
+.searchbar .container form .button__div button {
   font-size: 20px;
   width: 100px;
   height: 40px;
+}
+
+.searchbar--medium .container {
+  padding-left: 0;
+}
+
+.searchbar--medium .container form {
+  margin-left: 200px;
+}
+
+.searchbar--medium .container form .input__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.searchbar--medium .container form .input__div input {
+  display: block;
+  width: 100%;
 }
 
 .about-text .container-fluid {
@@ -407,6 +434,7 @@ header .container .lang button {
 }
 
 .about-text .container-fluid .container h2 {
+  font-family: "Oswald", "Oswald", sans-serif;
   color: #ffffff;
   font-size: 60px;
   font-weight: 300;
@@ -449,6 +477,7 @@ header .container .lang button {
   text-transform: uppercase;
   color: #242B45;
   font-size: 60px;
+  font-family: "Oswald", "Oswald", sans-serif;
   margin: 0;
   padding-bottom: 30px;
 }
@@ -505,6 +534,7 @@ header .container .lang button {
   text-transform: uppercase;
   color: #242B45;
   font-size: 60px;
+  font-family: "Oswald", "Oswald", sans-serif;
 }
 
 .openlayer-maps .map-fluid .map {
@@ -534,6 +564,7 @@ header .container .lang button {
   text-transform: uppercase;
   color: #242B45;
   font-size: 60px;
+  font-family: "Oswald", "Oswald", sans-serif;
   margin: 0;
   padding-bottom: 30px;
 }
@@ -580,6 +611,7 @@ header .container .lang button {
 }
 
 .section-people .container-fluid .container .tegijad-title {
+  font-family: "Oswald", "Oswald", sans-serif;
   font-weight: 300;
   text-transform: uppercase;
   color: #242B45;
@@ -689,6 +721,7 @@ header .container .lang button {
   text-transform: uppercase;
   color: #242B45;
   font-size: 60px;
+  font-family: "Oswald", "Oswald", sans-serif;
   margin: 0;
   padding-bottom: 30px;
 }
@@ -770,6 +803,7 @@ header .container .lang button {
   text-transform: uppercase;
   color: #242B45;
   font-size: 60px;
+  font-family: "Oswald", "Oswald", sans-serif;
   margin: 0;
   padding-bottom: 30px;
 }
@@ -861,6 +895,7 @@ header .container .lang button {
 }
 
 .support .container-fluid .container .support-1 .support-text h2 {
+  font-family: "Oswald", "Oswald", sans-serif;
   margin: 0;
   padding: 0;
   font-weight: 400;
@@ -933,6 +968,53 @@ header .container .lang button {
 .support .container-fluid .container .support-2 .support-bank p {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {
+  background-color: red;
+}
+
+#News {
+  background-color: green;
+}
+
+#Contact {
+  background-color: blue;
+}
+
+#About {
+  background-color: orange;
 }
 
 .share-container {
