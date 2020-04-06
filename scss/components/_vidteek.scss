@@ -1,35 +1,198 @@
-body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Arial;
-  }
-  
-  /* Style tab links */
-  .tablink {
-    background-color: #555;
-    color: white;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
-    width: 25%;
-  }
-  
-  .tablink:hover {
-    background-color: #777;
-  }
-  
-  /* Style the tab content (and add height:100% for full page content) */
-  .tabcontent {
-    color: white;
-    display: none;
-    padding: 100px 20px;
-    height: 100%;
-  }
-  
-  #Home {background-color: red;}
-  #News {background-color: green;}
-  #Contact {background-color: blue;}
-  #About {background-color: orange;}
+.section__tab {
+  background: $color3;
+  padding: 30px 0px ;
+  .container {
+    display: flex;
+    flex-direction: column;
+    
+    .tab__container {
+      width: 100%;
+
+        .tab {
+            display: flex;
+            border-bottom: 2px solid $color1;
+
+            button {
+                font-family: $font1;
+                font-size: $fsize1;
+                text-transform: uppercase;
+                padding: 10px 20px;
+
+                border: none;
+                background: $color3;
+            };
+
+            .active {
+              background: $color1;
+              color: $color3;
+              border-radius: 5px 5px 0 0;
+            }
+        };
+
+        .tabcontent {
+          display: flex;
+          flex-wrap: wrap;
+          padding-top: 20px;
+          margin: 0 -20px;
+          
+
+          .video--cont {
+            
+            width: calc(50% - 43px);
+            height: 320px;
+            margin: 20px;
+            padding: 0;
+            background-size: cover;
+            background-position: center;;
+            overflow: hidden;
+            display: flex;
+
+            &:hover {
+              z-index: 100;
+              transition: transform .2s;
+              transform: scale(1.1);
+            }
+
+            a {
+              display: flex;
+              align-items: flex-end;
+              vertical-align: top;
+              width: 100%;
+              flex: 1;
+              color: $color3;
+              font-size: $fsize1;
+              text-decoration: none;
+
+              .video-text {
+                position: relative;
+                width: 100%;
+                padding: 40px;
+                font-size: $fsize1;
+                font-weight: 300;
+                z-index: 8;
+
+                h2 {
+                  text-transform: uppercase;
+                  margin: 0;
+                  font-weight: 400;
+                  font-size: $fsize4;
+                  
+                  &::after {
+                    content: "\f144";
+                    font-family: "Font Awesome 5 Free";
+                    position: absolute;
+                    font-size: $fsize11;
+                    top: -30%;
+                    left: 40%;
+                  }
+                }
+
+                p {
+                  margin: 0;
+                  font-family: $font3;
+                };
+              };
+            };
+          };
+        };
+      };
+    }; 
+ };
+
+
+.section__tab{
+  .container {
+    .tab__container {
+      .tabcontent {
+        .video__small {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          margin: 5px;
+          flex-wrap: wrap;
+          flex-direction: row;
+          justify-content: space-around;
+          flex: 1;
+          
+          .video--small {
+            width: calc(50% - 43px);
+            height: 138px;
+        
+              a {
+                width: 100%;
+                flex: 1;
+                color: $color3;
+                font-size: $fsize1;
+                text-decoration: none;
+        
+                .video-text {
+                  position: relative;
+                  width: 100%;
+                  padding: 15px;
+                  font-size: $fsize1;
+                  font-weight: 300;
+                  z-index: 8;
+        
+                  h2 {
+                    text-transform: uppercase;
+                    margin: 0;
+                    font-weight: 400;
+                    font-size: $fsize8;
+                    
+                    &::after {
+                      content: "\f144";
+                      font-family: "Font Awesome 5 Free";
+                      position: relative;
+                      display: inline-block;
+                      font-size: 20px;
+                      top: 0;
+                      left: 20px;
+              
+                    }
+                  }
+        
+                  p {
+                    margin: 0;
+                    font-family: $font3;
+                    font-size: $fsize10;
+                  };
+                };
+              };
+            };
+         };
+      };
+    };
+  };
+};
+
+.break {
+  flex-basis: 100%;
+  margin: 0;
+}
+
+.section__tab {
+  .container{
+    .tab__container{
+      .tabcontent {
+        .video--medium {
+          display: inline-flex;
+          width: calc(33.333% - 43px);
+          height: 200px;
+            
+            .video-text {
+              padding: 10px !important;
+              h2 {
+                margin-right: 10px !important;
+                &::after {
+                  position: relative !important;
+                  display: inline-block !important;
+                  font-size: $fsize4 !important;
+                  left: 15px !important;
+                };  
+              };
+            }; 
+        };
+      };  
+    };
+  };
+};
