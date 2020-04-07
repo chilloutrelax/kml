@@ -1,0 +1,61 @@
+.materials-cont {
+    .container {
+        .materials__info {
+            display: flex;
+            flex-direction: row;
+
+            .materials__text {
+                flex: 1;
+                color: $color1;
+                padding-right: 10px;
+
+                h3 {
+                    margin: 0;
+                    font-size: $fsize14;
+                    font-family: $font1;
+                    font-weight: 400;
+                }
+
+                p {
+                    font-family: $font3;
+                    font-size: $fsize8;
+                    line-height: 30px;
+                }
+
+            };
+
+            .materials__image {
+                flex: 1;
+                
+                
+                img {
+                    width: 560px;
+                };
+            };
+        };
+
+        .materials__download{
+            h3 {
+                font-family: $font1;
+                text-transform: uppercase;
+                font-size: $fsize2;
+            }
+
+            p { font-size: $fsize3;}
+            
+            a {
+                font-size: $fsize1;
+                font-family: $font3;
+                color: $color1;
+
+                &::before {
+                    content: "\f019";
+                    font-family: "Font Awesome 5 Free";
+                    font-size: $fsize4;
+                    display: inline-block;
+                    color: $color2;
+                };
+            };
+        };
+    };
+};
