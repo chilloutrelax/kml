@@ -1,0 +1,55 @@
+.section__tab {
+    .container {
+        .tab__container {
+            .tags--boxed-list {
+                li {
+                    list-style-type: none;
+
+                    div{
+                        padding: 10px 0;
+                        a {
+                            text-decoration: none;
+                            color: $color1;
+                            font-family: $font3;
+                            margin: 0;
+                            padding: 0 10px;
+                            display: inline-flex;
+                            border: 3px solid $color8;
+                            border-radius: 5px;
+
+                            .fa-chevron-right {
+                                color: $color8;
+                            }
+                        
+                            h2, h3, h4, h5, h6 {
+                                font-weight: 400;
+                                margin: 5px;
+                            }
+
+                            h2 {
+                                font-size: $fsize15;
+                            };
+
+                            h3 {
+                                font-size: $fsize9;
+                            };
+
+                            h4 {
+                                font-size: $fsize6;
+                            };
+
+                            h5 {
+                                font-size: $fsize2;
+                            }
+
+                            h6 {
+                                font-size: $fsize8;
+                            }
+                        };
+                    };
+                };
+            };
+        };
+    };
+};
+

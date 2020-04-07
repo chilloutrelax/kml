@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kogu Me Lugu</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="./scss/styles.css">
+    
+</head>
+
+<body>
+    <header id="headerSticky">
+        <div class="container">
+            <div class="nav-logo">
+                <img id="nav-logo" src="./img/header/logo.png" alt="">
+            </div>
+            <nav>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Videoteek</a></li>
+                        <li><a href="#">Kaart</a></li>
+                        <li><a href="#">Teemad</a></li>
+                        <li><a href="#">Õppematerjalid</a></li>
+                        <li><a href="#">Tutvustus</a></li>
+                        <li><a href="#">Tegijad</a></li>
+                        <li><a href="#">Toeta</a></li>
+                    </ul>
+                </div>
+            </nav>
+    
+            <div class="lang">
+                <ul class="lang__bar">
+                    <li><a href="#">ENG</a></li>
+                    <li><a href="#">RUS</a></li>
+                </ul>
+                <button>Toetan</button>
+            </div>
+    
+        </div>
+    </header>
+
+    <main>
+        <div class="page-cont container-fluid">
+            <div class="container">
+                <div class="page__heading">
+                    <h2>Teemad</h2>
+                </div> 
+            </div>
+        </div>
+
+        <div class="searchbar container-fluid searchbar--full">
+            <div class="container">
+                <form action="">
+                    <div class="input__div">
+                        <input type="text" placeholder="Filtreeri teemasid">
+                    </div>
+                </form>  
+            </div>
+        </div>
+
+        <section class="section__tab container-fluid">
+            <div class="container">
+                <div class="tab__container">
+                    <div class="tab">
+                        <button class="tablinks active" onclick="openTab(event, 'tab1')">Kõik teemad</button>
+                        <button class="tablinks" onclick="openTab(event, 'tab2')">Ajalugu</button>
+                        <button class="tablinks" onclick="openTab(event, 'tab3')">Inimõigused</button>
+                    </div>
+                
+    
+                    <div id="tab1" class="tabcontent active">
+                        <div class="container">
+                              <ul class="tags--boxed-list">
+                                  <li>
+                                    <div><a href="#"><h2>Ajalugu <i class="fas fa-chevron-right"></i></h2></a></div>
+                                    <ul>
+                                        <li>
+                                            <div><a href="#"><h3>Teine maailmasõda <i class="fas fa-chevron-right"></i></h3></a></div>
+
+                                            <ul>
+                                                <li>
+                                                    <div>
+                                                        <a href=""><h4>Eesti Teises maailmasõjas <i class="fas fa-chevron-right"></i></h4></a>
+                                                    </div>
+                                                </li>
+
+                                                <ul>
+                                                    <li><div><a href="#"><h5>Saksa okupatsioon <i class="fas fa-chevron-right"></i></h5></a></div></li>
+
+                                                    <ul>
+                                                        <li><div><a href="#"><h6>Eesti Leegion <i class="fas fa-chevron-right"></i></h6></a></div></li>
+                                                    </ul>
+                                                </ul>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                  </li>
+                              </ul>
+
+                              <ul class="tags--boxed-list">
+                                  <li>
+                                      <div><a href="#"><h2>Inimõigused <i class="fas fa-chevron-right"></i></h2></a></div>
+                                      <ul>
+                                            <li><div><a href="#"><h3>Diskrimineerimine ja sallimatus <i class="fas fa-chevron-right"></i></h3></a></div></li>
+                                            <li><div><a href="#"><h3>Lapsed <i class="fas fa-chevron-right"></i></h3></a></div></li>
+                                            <li><div><a href="#"><h3>Ränne <i class="fas fa-chevron-right"></i></h3></a></div></li>
+                                            <ul>
+                                                <li><div><a href="#"><h4>Immigrant <i class="fas fa-chevron-right"></i></h4></a></div></li>
+                                                <li><div><a href="#"><h4>Keelebarjäär <i class="fas fa-chevron-right"></i></h4></a></div></li>
+                                                <li><div><a href="#"><h4>Õigus otsida varjupaika teistes riikides <i class="fas fa-chevron-right"></i></h4></a></div></li>
+                                                <li><div><a href="#"><h4>Pagulane <i class="fas fa-chevron-right"></i></h4></a></div></li>
+                                                <li><div><a href="#"><h4>Põgenikelaager <i class="fas fa-chevron-right"></i></h4></a></div></li>
+                                                <li><div><a href="#"><h4>Sõjapõgenik <i class="fas fa-chevron-right"></i></h4></a></div></li>
+                                                <li><div><a href="#"><h4>Sõda ja terrorism <i class="fas fa-chevron-right"></i></h4></a></div></li>
+
+                                                <ul>
+                                                    <li><div><a href="#"><h5>Enesekaitse <i class="fas fa-chevron-right"></i></h5></a></div></li>
+                                                    <li><div><a href="#"><h5>Inimsusevastane kuritegu <i class="fas fa-chevron-right"></i></h5></a></div></li>
+                                                </ul>
+                                            </ul>
+                                      </ul>
+                                  </li>
+                              </ul>
+                        </div>
+                    </div>
+
+                    <div id="tab2" class="tabcontent">
+                        Tab2
+                    </div>
+
+                    <div id="tab3" class="tabcontent">
+                        tab1
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    <div class="share-container">
+        <div id="socialBtn" class="social__btn">
+            <a class="tumblr" href="http://www.tumblr.com"><i class="fab fa-tumblr-square"></i></a>
+            <a class="twitter" href="http://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a class="facebook" href="htto://www.facebook.com"><i class="fab fa-facebook"></i></a>
+        </div>
+    
+        <div class="share-btn">
+            <i id="share" class="fas fa-share-alt"></i>
+            <i id="times" class="fas fa-times"></i>
+        </div>
+    </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            
+            <div class="footer-logo">
+                <img src="./img/footer/EMI.png" alt="">
+            </div>
+    
+            <div class="contact-info">
+                <h1>Eesti mälu instituut</h1>
+    
+                <div class="contact">
+                    <img src="./img/footer/envelope.png" alt="">
+                    <a href="#">info@mnemosyne.ee</a>
+                </div>
+    
+                <div class="contact">
+                    <img src="./img/footer/phone.png" alt="">
+                    <a href="#">(+372) 6645 039</a>
+                </div>
+    
+                <div class="contact">
+                    <img src="./img/footer/map-marker.png" alt="">
+                    <a href="#">Suur-Ameerika 12-39, 10119 Tallinn</a>
+                </div>
+            </div>
+    
+            <div class="social">
+                <a href="#"><img src="./img/footer/facebook.png" alt=""></a>
+                <a href="#"><img src="./img/footer/instagram.png" alt=""></a>
+                <a href="#"><img src="./img/footer/youtube.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+    <script src="js/header.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/sharebtn.js"></script>
+    <script src="js/videoteek.js"></script>
+
+</html>

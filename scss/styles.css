@@ -1925,7 +1925,7 @@ header {
   display: block;
 }
 
-.tabcontent .container ul {
+.tabcontent .container .tags--button {
   font-family: "Oswald", "Oswald", sans-serif;
   text-transform: uppercase;
   color: #242B45;
@@ -1933,43 +1933,93 @@ header {
   margin-right: 20px;
 }
 
-.tabcontent .container ul h2 {
+.tabcontent .container .tags--button h2 {
   font-size: 50px;
   margin: 10px 0;
   font-weight: 300;
 }
 
-.tabcontent .container ul li {
+.tabcontent .container .tags--button li {
   list-style-type: none;
   border-left: 10px solid #DEEDEC;
 }
 
-.tabcontent .container ul li div {
+.tabcontent .container .tags--button li div {
   padding-left: 20px;
 }
 
-.tabcontent .container ul li div h3 {
+.tabcontent .container .tags--button li div h3 {
   font-size: 30px;
   font-weight: 300;
   margin: 10px 0;
 }
 
-.tabcontent .container ul li div h4 {
+.tabcontent .container .tags--button li div h4 {
   font-size: 20px;
   font-weight: 300;
   margin: 10px 0;
 }
 
-.tabcontent .container ul li div h5 {
+.tabcontent .container .tags--button li div h5 {
   font-size: 16px;
   font-weight: 400;
   margin: 10px 0;
 }
 
-.tabcontent .container ul li div h6 {
+.tabcontent .container .tags--button li div h6 {
   font-size: 12px;
   font-weight: 400;
   margin: 10px 0;
+}
+
+.section__tab .container .tab__container .tags--boxed-list li {
+  list-style-type: none;
+}
+
+.section__tab .container .tab__container .tags--boxed-list li div {
+  padding: 10px 0;
+}
+
+.section__tab .container .tab__container .tags--boxed-list li div a {
+  text-decoration: none;
+  color: #242B45;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: 3px solid #EF6F6C;
+  border-radius: 5px;
+}
+
+.section__tab .container .tab__container .tags--boxed-list li div a .fa-chevron-right {
+  color: #EF6F6C;
+}
+
+.section__tab .container .tab__container .tags--boxed-list li div a h2, .section__tab .container .tab__container .tags--boxed-list li div a h3, .section__tab .container .tab__container .tags--boxed-list li div a h4, .section__tab .container .tab__container .tags--boxed-list li div a h5, .section__tab .container .tab__container .tags--boxed-list li div a h6 {
+  font-weight: 400;
+  margin: 5px;
+}
+
+.section__tab .container .tab__container .tags--boxed-list li div a h2 {
+  font-size: 32px;
+}
+
+.section__tab .container .tab__container .tags--boxed-list li div a h3 {
+  font-size: 28px;
+}
+
+.section__tab .container .tab__container .tags--boxed-list li div a h4 {
+  font-size: 24px;
+}
+
+.section__tab .container .tab__container .tags--boxed-list li div a h5 {
+  font-size: 20px;
+}
+
+.section__tab .container .tab__container .tags--boxed-list li div a h6 {
+  font-size: 16px;
 }
 
 .searchbar {
