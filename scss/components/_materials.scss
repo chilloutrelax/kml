@@ -1,0 +1,32 @@
+@import '../components/videoSize';
+
+body {
+    overflow: hidden;
+    scrollbar-color: black;
+}
+
+header {
+    border-bottom: 1px solid rgba(157, 155, 155, 0.197);
+}
+
+.materials-cont {
+    background: $color3;
+    .container {
+        display: block;
+        padding: 70px 0 29px 0;
+        .materials__heading {
+            @include sectionHeading;
+        }
+
+        .materials__thumbnails {
+            display: flex;
+            flex-wrap: wrap;
+            
+            .video--medium {
+                
+            }
+
+        }
+
+    }
+}
