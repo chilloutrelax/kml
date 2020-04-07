@@ -1,0 +1,98 @@
+.detail-cont {
+    background: $color3;
+
+    .video-detail {
+        align-items: unset;
+        padding: 40px 0;
+
+        .video {
+            .video__info {
+                @include sectionHeading;
+                h2 {
+                    font-size: $fsize12;
+                    font-weight: 400;
+                    margin: 0;
+                    padding: 0;
+                };
+
+                .video_info--text{
+                        font-family: $font3;
+                        font-size: $fsize8;
+                }
+            }
+
+            .video__people {
+                ul{
+                    font-family: $font3;
+                    font-size: $fsize1;
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 0;
+                    // border-bottom: 2px solid rgba(128, 128, 128, 0.129);
+                
+                    li {
+                        padding: 0 20px 0 0;
+                        margin: 0 20px 0 0;
+
+                        border-right: 2px solid rgba(128, 128, 128, 0.129);
+                        list-style-type: none;
+                    }
+
+                    .noborder--list {
+                        border-right: none;
+                    }
+                };
+            };
+
+            .video__tags {
+                border-top:2px solid rgba(128, 128, 128, 0.129);
+
+                .video__button {
+                    padding-top: 15px;
+
+                    button {
+                        padding: 5px 10px;
+                    }
+
+                    a {
+                        font-family: $font3;
+                        font-size: $fsize13;
+                    }
+                }
+            }
+
+            .video__map {
+                padding: 40px 0;
+            }
+        };
+
+        .video__suggestion {
+            display: flex;
+            flex-direction: column;
+            padding-left: 40px;
+           
+
+            .video__title {
+                font-family: $font1;
+                font-size: $fsize2;
+                color: $color1;
+                text-transform: uppercase;
+                font-weight: 400;
+                margin-top: 0;
+                padding-left: 10px;
+            };
+
+            .video__thumbnail {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+                @include videoSmall--detail;
+
+            };
+        };
+    };
+};

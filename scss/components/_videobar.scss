@@ -9,6 +9,12 @@
     @include gradientOverlay--blue;
 
     .v-container {
+
+        .container {
+            padding: 0 0;
+
+            
+        }
         
         .thumbnail-text {
             position: relative;
@@ -60,10 +66,27 @@
                 height: 160px;
                 margin: 0 auto;
                 padding: 0;
-                z-index: 10;
+                z-index: 9;
 
-            @include imageHyper;
-           };
+                @include imageHyper;
+
+                a::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    box-sizing: border-box;
+                    top: 40px;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    background-position-x:0%;
+                    background-position-y:0%;
+                    outline: 0;
+
+                    background: rgb(252,252,252);
+background: linear-gradient(180deg, rgba(252,252,252,0) 46%, rgba(36,43,69,0.165703781512605) 76%, rgba(36,43,69,0.4990371148459384) 100%);
+                };        
+            };    
         };
     };
 };

@@ -6,19 +6,12 @@
 @import './abstract/mixins';
 
 @import './layout/layout';
-
 @import './layout/header';
-
-@import './components/videobar';
-@import './components/searchbar';
-@import './components/section-about';
-@import './components/section-contact';
-@import './components/map';
-@import './components/section-learning';
-@import './components/section-people';
-@import './components/section-partners';
-@import './components/section-support';
-@import './components/vidteek';
-
 @import './layout/sharebtn';
 @import './layout/footer';
+
+@import './pages/index';
+@import './pages/video-list';
+@import './pages/video-detail';
+
+@import './components/searchbar';

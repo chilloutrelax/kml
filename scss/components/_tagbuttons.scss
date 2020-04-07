@@ -1,0 +1,82 @@
+.button__white--blue {
+    background: none;
+    border: 1px solid $color1;
+    border-radius: 5px;
+    font-family: $font3;
+    font-size: $fsize3;
+    color: $color1;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &:hover {
+        background: $color1;
+        color: $color3;
+    };
+};
+
+.button__white--red {
+    background: none;
+    border: 1px solid $color8;
+    border-radius: 5px;
+    font-family: $font3;
+    font-size: $fsize3;
+    color: $color8;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &:hover {
+        background: $color8;
+        color: $color3;
+    };
+};
+
+.button__white--purple {
+    background: none;
+    border: 1px solid $color9;
+    border-radius: 5px;
+    font-family: $font3;
+    font-size: $fsize3;
+    color: $color9;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+
+    &:hover {
+        background: $color9;
+        color: $color3;
+    };
+};
+
+.button__white--cyan {
+    background: none;
+    border: 1px solid $color2;
+    border-radius: 5px;
+    font-family: $font3;
+    font-size: $fsize3;
+    color: $color2;
+    font-weight: bold;
+    text-transform: uppercase;
+  
+
+    &:hover {
+        background: $color2;
+        color: $color3;
+    };
+};
+
+.button__white--orange {
+    background: none;
+    border: 1px solid $color10;
+    border-radius: 5px;
+    font-family: $font3;
+    font-size: $fsize3;
+    color: $color10;
+    font-weight: bold;
+    text-transform: uppercase;
+  
+
+    &:hover {
+        background: $color10;
+        color: $color3;
+    };
+};
