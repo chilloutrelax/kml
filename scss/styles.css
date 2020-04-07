@@ -47,6 +47,25 @@ body {
   padding: 0 20px;
 }
 
+.page-cont {
+  background: #ffffff;
+}
+
+.page-cont .container {
+  display: block;
+  padding: 70px 0 29px 0;
+}
+
+.page-cont .container .page__heading h2 {
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #242B45;
+  font-size: 60px;
+  font-family: "Oswald", "Oswald", sans-serif;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
 .sticky {
   position: fixed;
   width: 100%;
@@ -1692,16 +1711,16 @@ header {
   border-bottom: 1px solid rgba(157, 155, 155, 0.197);
 }
 
-.materials-cont {
+.page-cont {
   background: #ffffff;
 }
 
-.materials-cont .container {
+.page-cont .container {
   display: block;
   padding: 70px 0 29px 0;
 }
 
-.materials-cont .container .materials__heading h2 {
+.page-cont .container .page__heading h2 {
   font-weight: 300;
   text-transform: uppercase;
   color: #242B45;
@@ -1711,7 +1730,7 @@ header {
   padding-bottom: 30px;
 }
 
-.materials-cont .container .materials__thumbnails {
+.page-cont .container .materials__thumbnails {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1719,7 +1738,7 @@ header {
       flex-wrap: wrap;
 }
 
-.materials-cont .container .materials__info {
+.page-cont .container .materials__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1729,7 +1748,7 @@ header {
           flex-direction: row;
 }
 
-.materials-cont .container .materials__info .materials__text {
+.page-cont .container .materials__info .materials__text {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -1737,46 +1756,46 @@ header {
   padding-right: 10px;
 }
 
-.materials-cont .container .materials__info .materials__text h3 {
+.page-cont .container .materials__info .materials__text h3 {
   margin: 0;
   font-size: 40px;
   font-family: "Oswald", "Oswald", sans-serif;
   font-weight: 400;
 }
 
-.materials-cont .container .materials__info .materials__text p {
+.page-cont .container .materials__info .materials__text p {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 30px;
 }
 
-.materials-cont .container .materials__info .materials__image {
+.page-cont .container .materials__info .materials__image {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-.materials-cont .container .materials__info .materials__image img {
+.page-cont .container .materials__info .materials__image img {
   width: 560px;
 }
 
-.materials-cont .container .materials__download h3 {
+.page-cont .container .materials__download h3 {
   font-family: "Oswald", "Oswald", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
 }
 
-.materials-cont .container .materials__download p {
+.page-cont .container .materials__download p {
   font-size: 12px;
 }
 
-.materials-cont .container .materials__download a {
+.page-cont .container .materials__download a {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
   color: #242B45;
 }
 
-.materials-cont .container .materials__download a::before {
+.page-cont .container .materials__download a::before {
   content: "\f019";
   font-family: "Font Awesome 5 Free";
   font-size: 30px;
@@ -1813,11 +1832,11 @@ header {
   color: #242B45;
 }
 
-.searchbar .container form .input__div input::before {
+.searchbar .container form .input__div input::after {
   content: "\f002";
   font-family: "Font Awesome 5 Free";
   font-size: 20px;
-  position: absolute;
+  display: block;
   top: 50%;
   left: 50%;
 }
@@ -1868,5 +1887,194 @@ header {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.searchbar--full {
+  background: #ffffff;
+}
+
+.searchbar--full .container form {
+  width: 100%;
+}
+
+.searchbar--full .container form .input__div {
+  width: 100%;
+  margin: 0;
+}
+
+.searchbar--full .container form .input__div input {
+  width: 100%;
+  border: 1px solid rgba(206, 202, 202, 0.408);
+  background-color: #F6F6F6;
+  padding-right: 0px;
+}
+
+header {
+  border-bottom: 1px solid rgba(157, 155, 155, 0.197);
+}
+
+.page-cont .container {
+  padding-bottom: 0;
+}
+
+.page-cont .container .page__heading h2 {
+  padding-bottom: 0;
+}
+
+.tabcontent .container {
+  display: block;
+}
+
+.tabcontent .container ul {
+  font-family: "Oswald", "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: #242B45;
+  padding-left: 20px;
+  margin-right: 20px;
+}
+
+.tabcontent .container ul h2 {
+  font-size: 50px;
+  margin: 10px 0;
+  font-weight: 300;
+}
+
+.tabcontent .container ul li {
+  list-style-type: none;
+  border-left: 10px solid #DEEDEC;
+}
+
+.tabcontent .container ul li div {
+  padding-left: 20px;
+}
+
+.tabcontent .container ul li div h3 {
+  font-size: 30px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+.tabcontent .container ul li div h4 {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+.tabcontent .container ul li div h5 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.tabcontent .container ul li div h6 {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.searchbar {
+  background: #242B45;
+}
+
+.searchbar .container {
+  display: block;
+  padding: 20px 0;
+}
+
+.searchbar .container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.searchbar .container form .input__div {
+  margin-right: 20px;
+}
+
+.searchbar .container form .input__div input {
+  position: relative;
+  width: 1050px;
+  padding: 10px;
+  border: 0;
+  border-radius: 20px;
+  font-size: 20px;
+  color: #242B45;
+}
+
+.searchbar .container form .input__div input::after {
+  content: "\f002";
+  font-family: "Font Awesome 5 Free";
+  font-size: 20px;
+  display: block;
+  top: 50%;
+  left: 50%;
+}
+
+.searchbar .container form .button__div button {
+  background: #3FBEBC;
+  width: 90px;
+  height: 60px;
+  border-radius: 6px;
+  border: 0;
+  text-transform: uppercase;
+  vertical-align: baseline;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+.searchbar .container form .button__div button {
+  font-size: 20px;
+  width: 100px;
+  height: 40px;
+}
+
+.searchbar--medium .container {
+  padding-left: 0;
+}
+
+.searchbar--medium .container form {
+  margin-left: 200px;
+}
+
+.searchbar--medium .container form .input__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.searchbar--medium .container form .input__div input {
+  display: block;
+  width: 100%;
+}
+
+.searchbar--medium .container form .button__div button {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.searchbar--full {
+  background: #ffffff;
+}
+
+.searchbar--full .container form {
+  width: 100%;
+}
+
+.searchbar--full .container form .input__div {
+  width: 100%;
+  margin: 0;
+}
+
+.searchbar--full .container form .input__div input {
+  width: 100%;
+  border: 1px solid rgba(206, 202, 202, 0.408);
+  background-color: #F6F6F6;
+  padding-right: 0px;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -19,11 +19,11 @@
                     font-size: $fsize2;
                     color: $color1;
 
-                    &::before {
+                    &::after {
                         content: "\f002";
                         font-family: "Font Awesome 5 Free";
                         font-size: 20px;
-                        position: absolute;
+                        display: block;
                         top: 50%;
                         left: 50%;
                     }
@@ -67,3 +67,24 @@
     }
 }
 
+
+.searchbar--full {
+    background: $color3;
+    .container {
+        form {
+            width: 100%;
+
+            .input__div {
+                width:100%;
+                margin: 0;
+
+                input {
+                    width: 100%;
+                    border: 1px solid $color12;
+                    background-color: $color11;
+                    padding-right: 0px;
+                }
+            }
+        }
+    }
+}

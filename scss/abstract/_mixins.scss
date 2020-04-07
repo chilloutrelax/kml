@@ -322,3 +322,9 @@
         };
     };
 };
+
+@mixin pageHeader {
+    header {
+        border-bottom: 1px solid rgba(157, 155, 155, 0.197);
+    };
+};
