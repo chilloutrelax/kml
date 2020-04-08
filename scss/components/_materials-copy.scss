@@ -35,13 +35,17 @@
         };
 
         .materials__download{
+            padding-bottom: 30px;
             h3 {
                 font-family: $font1;
                 text-transform: uppercase;
                 font-size: $fsize2;
             }
 
-            p { font-size: $fsize3;}
+            p { 
+                font-size: $fsize3;
+                margin: 0;
+            }
             
             a {
                 font-size: $fsize1;

@@ -11,19 +11,16 @@ body {
     background: $color3;
     .container {
         display: block;
-        padding: 70px 0 29px 0;
+        padding: 70px 0px 0px 0px;
+        
         .page__heading {
+            
             @include sectionHeading;
         }
 
         .materials__thumbnails {
             display: flex;
             flex-wrap: wrap;
-            
-            .video--medium {
-                
-            }
-
         }
     }
 }

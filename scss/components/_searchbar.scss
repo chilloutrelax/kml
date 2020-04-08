@@ -9,24 +9,29 @@
             display: flex;
 
             .input__div {
+                position: relative;
                 margin-right: 20px;
+                font-family: "Font Awesome 5 Free";
+
+                &::before {
+                    content: "\f002";
+                    font-family: "Font Awesome 5 Free";
+                    color: $color1;
+                    font-size: 20px;
+                    position: absolute;
+                    bottom: 10px;
+                    left: 10px;
+                    z-index: 2;
+                }
+
                 input {
                     position: relative;
                     width: 1050px;
-                    padding: 10px;
+                    padding: 10px 0 10px 30px;
                     border: 0;
                     border-radius: 20px;
                     font-size: $fsize2;
                     color: $color1;
-
-                    &::after {
-                        content: "\f002";
-                        font-family: "Font Awesome 5 Free";
-                        font-size: 20px;
-                        display: block;
-                        top: 50%;
-                        left: 50%;
-                    }
                 }
             }
 

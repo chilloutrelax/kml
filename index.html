@@ -12,19 +12,21 @@
 
     <header id="headerSticky">
         <div class="container">
+            <a href="index.html">
             <div class="nav-logo">
                 <img id="nav-logo" src="./img/header/logo.png" alt="">
             </div>
+            </a>
             <nav>
                 <div class="menu">
                     <ul>
-                        <li><a href="#">Videoteek</a></li>
-                        <li><a href="#">Kaart</a></li>
-                        <li><a href="#">Teemad</a></li>
-                        <li><a href="#">Õppematerjalid</a></li>
-                        <li><a href="#">Tutvustus</a></li>
-                        <li><a href="#">Tegijad</a></li>
-                        <li><a href="#">Toeta</a></li>
+                        <li><a href="/video-list.html">Videoteek</a></li>
+                        <li><a href="/index.html#map-cont">Kaart</a></li>
+                        <li><a href="/tags.html">Teemad</a></li>
+                        <li><a href="/index.html#learn-cont">Õppematerjalid</a></li>
+                        <li><a href="/index.html#about-txt">Tutvustus</a></li>
+                        <li><a href="/index.html#tegijad">Tegijad</a></li>
+                        <li><a href="/index.html#support-container">Toeta</a></li>
                     </ul>
                 </div>
             </nav>
@@ -34,7 +36,7 @@
                     <li><a href="#">ENG</a></li>
                     <li><a href="#">RUS</a></li>
                 </ul>
-                <button>Toetan</button>
+                <button onclick="location.href='index.html#support-container'">Toetan</button>
             </div>
 
         </div>
@@ -99,7 +101,7 @@
             </div>
         </div>
 
-        <section class="about-text">
+        <section id="about-txt" class="about-text">
             <div class="container-fluid">
                 
                 <div class="container headText">
@@ -121,7 +123,7 @@
         </section>
 
 
-        <div class="openlayer-maps">
+        <div id="map-cont" class="openlayer-maps">
             <div class="map-fluid container-fluid">
                 <div id="mapGradient" class="mapGradient">
                     <h2>Lood ümber <strong>Maailma</strong></h2>
@@ -131,13 +133,14 @@
             </div>
         </div>
         
-        <section class="learning">
+        <section id="learn-cont" class="learning">
             <div class="container-fluid">
                 <div class="container learning__container">
                     <h2 class="learning-title">Õppematerjalid</h2>
                     <div class="learning-items">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet consequuntur provident consectetur debitis qui.</p>
-                    <button>Loe lähemalt</button>
+                    <a href="/materials.html"><button>Loe lähemalt</button></a>
+                    
                     </div>
                 </div>
             </div>
@@ -155,7 +158,7 @@
             </div>
         </section>
 
-        <section class="section-people">
+        <section id="tegijad" class="section-people">
             <div class="container-fluid">
                 <div class="container">
                     <h2 class="tegijad-title">Tegijad</h2>
@@ -214,7 +217,7 @@
 
                         <div class="card">
                             <div id="modalBtn" class="modalButton">
-                                <img class="card__image" src="/img/section-people/Oval 3.png" alt="">
+                                <img class="card__image" src="/img/section-people/Oval 2.png" alt="">
                                 <h4 class="card__title">Mari Mets</h4>
                             </div>
 
@@ -240,7 +243,7 @@
 
                         <div class="card">
                             <div id="modalBtn" class="modalButton">
-                                <img class="card__image" src="/img/section-people/Oval 3.png" alt="">
+                                <img class="card__image" src="/img/section-people/Oval 2.png" alt="">
                                 <h4 class="card__title">Mari Mets</h4>
                             </div>
 
@@ -266,7 +269,7 @@
 
                         <div class="card">
                             <div id="modalBtn" class="modalButton">
-                                <img class="card__image" src="/img/section-people/Oval 3.png" alt="">
+                                <img class="card__image" src="/img/section-people/Oval 2.png" alt="">
                                 <h4 class="card__title">Mari Mets</h4>
                             </div>
 
@@ -376,34 +379,32 @@
             </div>
         </section>
 
-        <section class="support">
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="support-1">
-                        <div class="support-text">
-                            <h2>Sinu panus loeb</h2>
-                            <h2 class="headingH"><strong>toeta algatust!</strong> </h2>
-                            <p>Tänu Sinu rahalisele panusele on meil võimalik salvestada lugusid, mis rikastavad ja elavdavad Eesti kogukonda. Samuti on Sinu rahaline toetus abiks Kogu Me Lugu portaali haldamisel ja arendamisel.</p>
-                            <p>Kogu Me Lugu on võimalik toetada nii ühekordse maksega kui püsikorraldusega Sihtasutuse Unitas kontole. Ühekordse makse puhul kasuta allolevaid makselinke või ülekannet SA Unitas pangakontole. Püsikorralduse saab vormistada SA Unitas pangakontole. Konto andmed on nähtaval allpool.</p>
-                            <p>SA Unitas kuulub Vabariigi Valitsuse tulumaksusoodustusega ühenduste nimekirja, seega on eraisikute poolt tehtud annetuste pealt võimalik tagasi saada tulumaks. Juriidilistele isikutele on sihtasutusele tehtavad annetused samuti maksuvabad. Mõlemale kehtivad maksuvabade annetuste osas tulumaksuseadusega seatud piirangud.</p>
-
-                            <button>Toetan</button>
-                        </div>
+        <section id="support-container" class="support container-fluid">
+            <div class="container">
+                <div class="support-1">
+                    <div class="support-text">
+                        <h2>Sinu panus loeb</h2>
+                        <h2 class="headingH"><strong>toeta algatust!</strong> </h2>
+                        <p>Tänu Sinu rahalisele panusele on meil võimalik salvestada lugusid, mis rikastavad ja elavdavad Eesti kogukonda. Samuti on Sinu rahaline toetus abiks Kogu Me Lugu portaali haldamisel ja arendamisel.</p>
+                        <p>Kogu Me Lugu on võimalik toetada nii ühekordse maksega kui püsikorraldusega Sihtasutuse Unitas kontole. Ühekordse makse puhul kasuta allolevaid makselinke või ülekannet SA Unitas pangakontole. Püsikorralduse saab vormistada SA Unitas pangakontole. Konto andmed on nähtaval allpool.</p>
+                        <p>SA Unitas kuulub Vabariigi Valitsuse tulumaksusoodustusega ühenduste nimekirja, seega on eraisikute poolt tehtud annetuste pealt võimalik tagasi saada tulumaks. Juriidilistele isikutele on sihtasutusele tehtavad annetused samuti maksuvabad. Mõlemale kehtivad maksuvabade annetuste osas tulumaksuseadusega seatud piirangud.</p>
+    
+                        <button>Toetan</button>
                     </div>
-
-                    <div class="support-2">
-                        <div class="support-card">
-                            <img src="/img/section-support/ev100.png" alt="">
-                            <p>Löö kaasa Kogu Me Lugu Eesti Vabariik 100 kingiprojektis või toeta meid rahaliselt!</p>
-                            <a href="">Loe lähemalt</a>
-                        </div>
-
-                        <div class="support-bank">
-                            <h4>Pangakonto andmed</h4>
-                            <p><Strong>EE85 1010 2200 8178 2010</Strong>  | BIC: EEUHEE2X</p>
-                            <p><strong>SEB PANK: </strong>Tornimäe 2, 15010, Tallinn, Eesti</p>
-                            <p><strong>Selgitus: </strong>Toetan Kogu Me Lugu</p>
-                        </div>
+                </div>
+    
+                <div class="support-2">
+                    <div class="support-card">
+                        <img src="/img/section-support/ev100.png" alt="">
+                        <p>Löö kaasa Kogu Me Lugu Eesti Vabariik 100 kingiprojektis või toeta meid rahaliselt!</p>
+                        <a href="">Loe lähemalt</a>
+                    </div>
+    
+                    <div class="support-bank">
+                        <h4>Pangakonto andmed</h4>
+                        <p><Strong>EE85 1010 2200 8178 2010</Strong>  | BIC: EEUHEE2X</p>
+                        <p><strong>SEB PANK: </strong>Tornimäe 2, 15010, Tallinn, Eesti</p>
+                        <p><strong>Selgitus: </strong>Toetan Kogu Me Lugu</p>
                     </div>
                 </div>
             </div>
@@ -465,7 +466,6 @@
     <script src="js/map.js"></script>
     <script src="js/sharebtn.js"></script>
     <script src="js/videoteek.js"></script>
-
     
 </body>
 </html>

@@ -17,3 +17,8 @@
 @import './pages/tags';
 
 @import './components/searchbar';
+
+
+html {
+    scroll-behavior: smooth;
+};

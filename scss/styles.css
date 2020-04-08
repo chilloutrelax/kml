@@ -101,7 +101,11 @@ header .container {
   height: 60px;
 }
 
-header .container .nav-logo {
+header .container a {
+  z-index: 999;
+}
+
+header .container a .nav-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,10 +114,9 @@ header .container .nav-logo {
           justify-content: center;
   width: 160px;
   height: 50px;
-  z-index: 999;
 }
 
-header .container .nav-logo img {
+header .container a .nav-logo img {
   position: absolute;
   width: 160px;
   -webkit-transition: 0.4s;
@@ -215,6 +218,7 @@ header .container .lang button {
   font-size: 20px;
   font-weight: 600;
   font-family: inherit;
+  cursor: pointer;
 }
 
 .share-container {
@@ -392,12 +396,12 @@ footer .container .social {
 }
 
 .image-container .v-container .thumbnail-text .thumb__fix1::before {
-  content: url("../img/vbar/Play.png");
+  content: "\f144";
+  font-family: "Font Awesome 5 Free";
+  font-size: 60px;
+  top: -30%;
+  left: 40%;
   padding-right: 40px;
-}
-
-.image-container .v-container .thumbnail-text .thumb__fix1::before:hover {
-  background: white;
 }
 
 .image-container .v-container .thumbnail-text .thumb__fix1 h2 {
@@ -464,7 +468,11 @@ footer .container .social {
           transform: scale(1.1);
 }
 
-.image-container .v-container .container .thumbnail-bottom a::before {
+.image-container .v-container .container .thumbnail-bottom a .text {
+  z-index: 10;
+}
+
+.image-container .v-container .container .thumbnail-bottom a::after {
   content: "";
   display: block;
   position: absolute;
@@ -474,12 +482,17 @@ footer .container .social {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-position-x: 0%;
-  background-position-y: 0%;
-  outline: 0;
   background: #fcfcfc;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(46%, rgba(252, 252, 252, 0)), color-stop(76%, rgba(36, 43, 69, 0.165704)), to(rgba(36, 43, 69, 0.499037)));
-  background: linear-gradient(180deg, rgba(252, 252, 252, 0) 46%, rgba(36, 43, 69, 0.165704) 76%, rgba(36, 43, 69, 0.499037) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(34%, rgba(252, 252, 252, 0)), color-stop(73%, rgba(36, 43, 69, 0.490634)), color-stop(95%, rgba(36, 43, 69, 0.499037)));
+  background: linear-gradient(180deg, rgba(252, 252, 252, 0) 34%, rgba(36, 43, 69, 0.490634) 73%, rgba(36, 43, 69, 0.499037) 95%);
+}
+
+.about-text::before {
+  display: block;
+  content: " ";
+  margin-top: -140px;
+  height: 140px;
+  visibility: hidden;
 }
 
 .about-text .container-fluid {
@@ -587,13 +600,20 @@ footer .container .social {
   padding-right: 10px;
 }
 
+.openlayer-maps::before {
+  display: block;
+  content: " ";
+  margin-top: -140px;
+  height: 140px;
+  visibility: hidden;
+}
+
 .openlayer-maps .map-fluid {
   position: relative;
 }
 
-.openlayer-maps .map-fluid .mapGradient:hover {
-  visibility: hidden;
-  pointer-events: none;
+.openlayer-maps .map-fluid .mapGradient {
+  height: 100%;
 }
 
 .openlayer-maps .map-fluid .mapGradient::before {
@@ -602,7 +622,6 @@ footer .container .social {
   display: block;
   z-index: 9;
   width: 100%;
-  max-width: 100%;
   height: 100%;
   background: white;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(33%, rgba(255, 255, 255, 0.55506)), color-stop(75%, rgba(255, 255, 255, 0.927609)));
@@ -628,6 +647,14 @@ footer .container .social {
   height: 400px;
   width: 100%;
   border: 0px;
+}
+
+.learning::before {
+  display: block;
+  content: " ";
+  margin-top: -140px;
+  height: 140px;
+  visibility: hidden;
 }
 
 .learning .container-fluid {
@@ -677,11 +704,20 @@ footer .container .social {
   text-transform: uppercase;
   width: 120px;
   height: 40px;
+  cursor: pointer;
 }
 
 .learning .container-fluid .learning__container .learning-items button:hover {
   background: #242B45;
   color: #ffffff;
+}
+
+.section-people::before {
+  display: block;
+  content: " ";
+  margin-top: -140px;
+  height: 140px;
+  visibility: hidden;
 }
 
 .section-people .container-fluid {
@@ -960,7 +996,7 @@ footer .container .social {
   text-align: center;
 }
 
-.support .container-fluid {
+.support {
   background: url(../img/section-support/support-bg.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -968,20 +1004,20 @@ footer .container .social {
   padding: 50px 0;
 }
 
-.support .container-fluid .container {
+.support .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.support .container-fluid .container .support-1 {
+.support .container .support-1 {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   display: block;
 }
 
-.support .container-fluid .container .support-1 .support-text h2 {
+.support .container .support-1 .support-text h2 {
   font-family: "Oswald", "Oswald", sans-serif;
   margin: 0;
   padding: 0;
@@ -991,11 +1027,11 @@ footer .container .social {
   color: #242B45;
 }
 
-.support .container-fluid .container .support-1 .support-text .headingH {
+.support .container .support-1 .support-text .headingH {
   margin-top: -30px;
 }
 
-.support .container-fluid .container .support-1 .support-text p {
+.support .container .support-1 .support-text p {
   font-family: "Open Sans", sans-serif;
   color: #242B45;
   font-size: 16px;
@@ -1003,7 +1039,7 @@ footer .container .social {
   line-height: 30px;
 }
 
-.support .container-fluid .container .support-1 .support-text button {
+.support .container .support-1 .support-text button {
   background: #3FBEBC;
   width: 90px;
   height: 60px;
@@ -1015,35 +1051,36 @@ footer .container .social {
   font-size: 20px;
   font-weight: 600;
   font-family: inherit;
+  cursor: pointer;
 }
 
-.support .container-fluid .container .support-1 .support-text button {
+.support .container .support-1 .support-text button {
   margin-top: 40px;
 }
 
-.support .container-fluid .container .support-2 .support-card {
+.support .container .support-2 .support-card {
   width: 320px;
   background: #ffffff;
   padding: 20px;
   border-radius: 10px;
 }
 
-.support .container-fluid .container .support-2 .support-card img {
+.support .container .support-2 .support-card img {
   max-width: 50%;
 }
 
-.support .container-fluid .container .support-2 .support-card p {
+.support .container .support-2 .support-card p {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
 }
 
-.support .container-fluid .container .support-2 .support-card a {
+.support .container .support-2 .support-card a {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   color: #3FBEBC;
 }
 
-.support .container-fluid .container .support-2 .support-bank h4 {
+.support .container .support-2 .support-bank h4 {
   text-transform: uppercase;
   font-size: 20px;
   margin-bottom: 40px;
@@ -1052,9 +1089,14 @@ footer .container .social {
   padding: 0;
 }
 
-.support .container-fluid .container .support-2 .support-bank p {
+.support .container .support-2 .support-bank p {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
+}
+
+.support .margin--fix {
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 .section__tab {
@@ -1109,6 +1151,7 @@ footer .container .social {
 }
 
 .section__tab .container .tab__container .tabcontent .video--cont {
+  position: relative;
   width: calc(50% - 43px);
   height: 320px;
   margin: 20px;
@@ -1129,6 +1172,21 @@ footer .container .social {
   transition: transform .2s, -webkit-transform .2s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.section__tab .container .tab__container .tabcontent .video--cont::after {
+  content: "";
+  display: block;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  top: 40px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fcfcfc;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(34%, rgba(252, 252, 252, 0)), color-stop(73%, rgba(36, 43, 69, 0.751138)), color-stop(93%, rgba(36, 43, 69, 0.891194)));
+  background: linear-gradient(180deg, rgba(252, 252, 252, 0) 34%, rgba(36, 43, 69, 0.751138) 73%, rgba(36, 43, 69, 0.891194) 93%);
 }
 
 .section__tab .container .tab__container .tabcontent .video--cont a {
@@ -1199,8 +1257,24 @@ footer .container .social {
 }
 
 .section__tab .container .tab__container .tabcontent .video__small .video--small {
+  position: relative;
   width: calc(50% - 43px);
   height: 138px;
+}
+
+.section__tab .container .tab__container .tabcontent .video__small .video--small::after {
+  content: "";
+  display: block;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  top: 40px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fcfcfc;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(34%, rgba(252, 252, 252, 0)), color-stop(73%, rgba(36, 43, 69, 0.751138)), color-stop(93%, rgba(36, 43, 69, 0.891194)));
+  background: linear-gradient(180deg, rgba(252, 252, 252, 0) 34%, rgba(36, 43, 69, 0.751138) 73%, rgba(36, 43, 69, 0.891194) 93%);
 }
 
 .section__tab .container .tab__container .tabcontent .video__small .video--small a {
@@ -1259,6 +1333,21 @@ footer .container .social {
   height: 200px;
 }
 
+.section__tab .container .tab__container .tabcontent .video--medium::after {
+  content: "";
+  display: block;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  top: 40px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fcfcfc;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(34%, rgba(252, 252, 252, 0)), color-stop(73%, rgba(36, 43, 69, 0.751138)), color-stop(93%, rgba(36, 43, 69, 0.891194)));
+  background: linear-gradient(180deg, rgba(252, 252, 252, 0) 34%, rgba(36, 43, 69, 0.751138) 73%, rgba(36, 43, 69, 0.891194) 93%);
+}
+
 .section__tab .container .tab__container .tabcontent .video--medium .video-text {
   padding: 10px !important;
 }
@@ -1283,6 +1372,7 @@ footer .container .social {
   color: #242B45;
   font-weight: bold;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .button__white--blue:hover {
@@ -1299,6 +1389,7 @@ footer .container .social {
   color: #EF6F6C;
   font-weight: bold;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .button__white--red:hover {
@@ -1315,6 +1406,7 @@ footer .container .social {
   color: #6564DB;
   font-weight: bold;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .button__white--purple:hover {
@@ -1331,6 +1423,7 @@ footer .container .social {
   color: #3FBEBC;
   font-weight: bold;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .button__white--cyan:hover {
@@ -1347,6 +1440,7 @@ footer .container .social {
   color: #FF8C42;
   font-weight: bold;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .button__white--orange:hover {
@@ -1540,6 +1634,7 @@ footer .container .social {
 }
 
 .video--cont {
+  position: relative;
   width: calc(50% - 43px);
   height: 320px;
   margin: 20px;
@@ -1560,6 +1655,21 @@ footer .container .social {
   transition: transform .2s, -webkit-transform .2s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.video--cont::after {
+  content: "";
+  display: block;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  top: 40px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fcfcfc;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(34%, rgba(252, 252, 252, 0)), color-stop(73%, rgba(36, 43, 69, 0.751138)), color-stop(93%, rgba(36, 43, 69, 0.891194)));
+  background: linear-gradient(180deg, rgba(252, 252, 252, 0) 34%, rgba(36, 43, 69, 0.751138) 73%, rgba(36, 43, 69, 0.891194) 93%);
 }
 
 .video--cont a {
@@ -1707,7 +1817,7 @@ body {
   scrollbar-color: black;
 }
 
-header {
+.tag--header {
   border-bottom: 1px solid rgba(157, 155, 155, 0.197);
 }
 
@@ -1717,7 +1827,7 @@ header {
 
 .page-cont .container {
   display: block;
-  padding: 70px 0 29px 0;
+  padding: 70px 0px 0px 0px;
 }
 
 .page-cont .container .page__heading h2 {
@@ -1779,6 +1889,10 @@ header {
   width: 560px;
 }
 
+.page-cont .container .materials__download {
+  padding-bottom: 30px;
+}
+
 .page-cont .container .materials__download h3 {
   font-family: "Oswald", "Oswald", sans-serif;
   text-transform: uppercase;
@@ -1787,6 +1901,7 @@ header {
 
 .page-cont .container .materials__download p {
   font-size: 12px;
+  margin: 0;
 }
 
 .page-cont .container .materials__download a {
@@ -1819,26 +1934,30 @@ header {
 }
 
 .searchbar .container form .input__div {
+  position: relative;
   margin-right: 20px;
+  font-family: "Font Awesome 5 Free";
+}
+
+.searchbar .container form .input__div::before {
+  content: "\f002";
+  font-family: "Font Awesome 5 Free";
+  color: #242B45;
+  font-size: 20px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 2;
 }
 
 .searchbar .container form .input__div input {
   position: relative;
   width: 1050px;
-  padding: 10px;
+  padding: 10px 0 10px 30px;
   border: 0;
   border-radius: 20px;
   font-size: 20px;
   color: #242B45;
-}
-
-.searchbar .container form .input__div input::after {
-  content: "\f002";
-  font-family: "Font Awesome 5 Free";
-  font-size: 20px;
-  display: block;
-  top: 50%;
-  left: 50%;
 }
 
 .searchbar .container form .button__div button {
@@ -1853,6 +1972,7 @@ header {
   font-size: 20px;
   font-weight: 600;
   font-family: inherit;
+  cursor: pointer;
 }
 
 .searchbar .container form .button__div button {
@@ -1909,7 +2029,7 @@ header {
   padding-right: 0px;
 }
 
-header {
+.tag--header {
   border-bottom: 1px solid rgba(157, 155, 155, 0.197);
 }
 
@@ -2038,26 +2158,30 @@ header {
 }
 
 .searchbar .container form .input__div {
+  position: relative;
   margin-right: 20px;
+  font-family: "Font Awesome 5 Free";
+}
+
+.searchbar .container form .input__div::before {
+  content: "\f002";
+  font-family: "Font Awesome 5 Free";
+  color: #242B45;
+  font-size: 20px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 2;
 }
 
 .searchbar .container form .input__div input {
   position: relative;
   width: 1050px;
-  padding: 10px;
+  padding: 10px 0 10px 30px;
   border: 0;
   border-radius: 20px;
   font-size: 20px;
   color: #242B45;
-}
-
-.searchbar .container form .input__div input::after {
-  content: "\f002";
-  font-family: "Font Awesome 5 Free";
-  font-size: 20px;
-  display: block;
-  top: 50%;
-  left: 50%;
 }
 
 .searchbar .container form .button__div button {
@@ -2072,6 +2196,7 @@ header {
   font-size: 20px;
   font-weight: 600;
   font-family: inherit;
+  cursor: pointer;
 }
 
 .searchbar .container form .button__div button {
@@ -2126,5 +2251,9 @@ header {
   border: 1px solid rgba(206, 202, 202, 0.408);
   background-color: #F6F6F6;
   padding-right: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -10,3 +10,12 @@ var map = new ol.Map({
     zoom: 4
   })
 });
+
+var mapGradient = document.getElementById("mapGradient");
+mapGradient.onmouseover = function() {
+  mapGradient.style.display = "none";
+};
+
+mapGradient.onmouseout = function() {
+  mapGradient.style.display = "block";
+};

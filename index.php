@@ -4,32 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kogu Me Lugu</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" href="./scss/styles.css">
     
 </head>
 
 <body>
-    <?php include './header.html' ?>
+    <?php include './components/header.html' ?>
 
     <main>
-        <?php include './searchbar.html' ?>
+        <?php include './components/searchbar.html' ?>
 
+        <?php include './components/imgcontainer.html' ?>
 
+        <?php include './components/about.html' ?>
 
-        <?php include './shareBtn.html' ?>
+        <?php include './components/map_gradient.html' ?>
+
+        <?php include './components/learning.html' ?>
+
+        <?php include './components/contact.html' ?>
+
+        <?php include './components/people.html' ?>
+
+        <?php include './components/partners.html' ?>
+
+        <?php include './components/support.html' ?>
+
+        <?php include './components/shareBtn.html' ?>
     </main>
     
 
 
 
-    <?php include './footer.html' ?>
+    <?php include './components/footer.html' ?>
 </body>
 
 
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/build/ol.js"></script>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList"></script>
     <script src="js/header.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/map.js"></script>
     <script src="js/sharebtn.js"></script>
-
+    <script src="js/videoteek.js"></script>
+    <script src="js/scroll.js"></script>
 </html>

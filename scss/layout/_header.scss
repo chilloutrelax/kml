@@ -28,20 +28,24 @@ header {
     .container {
 
         height: 60px;
-        
-        .nav-logo {
-            display: flex;
-            justify-content: center;
-            width: 160px;
-            height: 50px;
+    
+        a {
             z-index: 999;
-
-            img {
-                position: absolute;
+            .nav-logo {
+                display: flex;
+                justify-content: center;
                 width: 160px;
-                transition: 0.4s;
+                height: 50px;
+                
+    
+                img {
+                    position: absolute;
+                    width: 160px;
+                    transition: 0.4s;
+                };
             };
-        };
+        }    
+        
 
         nav {
             display: flex;

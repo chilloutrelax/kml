@@ -1,4 +1,11 @@
 .about-text {
+    &::before {
+        display: block;
+        content: " ";
+        margin-top: -140px;
+        height: 140px;
+        visibility: hidden;
+    }
         
     .container-fluid {
         background: url(../img/section_about/Image.png);

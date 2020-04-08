@@ -31,12 +31,12 @@
                 flex-direction: row;      
 
                 &::before {
-                    content: url('../img/vbar/Play.png');
+                    content: "\f144";
+                    font-family: "Font Awesome 5 Free";
+                    font-size: $fsize5;
+                    top: -30%;
+                    left: 40%;
                     padding-right: 40px;
-
-                    &:hover {
-                        background: white;
-                    }
                 }
             
                 h2{
@@ -70,7 +70,12 @@
 
                 @include imageHyper;
 
-                a::before {
+                a {
+                    .text {
+                        z-index: 10; 
+                    }
+                }
+                a::after {
                     content: "";
                     display: block;
                     position: absolute;
@@ -79,13 +84,9 @@
                     bottom: 0;
                     left: 0;
                     width: 100%;
-                    background-position-x:0%;
-                    background-position-y:0%;
-                    outline: 0;
-
                     background: rgb(252,252,252);
-                    background: linear-gradient(180deg, rgba(252,252,252,0) 46%, rgba(36,43,69,0.165703781512605) 76%, rgba(36,43,69,0.4990371148459384) 100%);
-                };        
+                    background: linear-gradient(180deg, rgba(252,252,252,0) 34%, rgba(36,43,69,0.4906337535014006) 73%, rgba(36,43,69,0.4990371148459384) 95%);
+                };    
             };    
         };
     };
