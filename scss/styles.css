@@ -221,6 +221,160 @@ header .container .lang button {
   cursor: pointer;
 }
 
+@media screen and (max-width: 600px) {
+  header {
+    margin: 0 auto;
+    width: 100%;
+  }
+  header .container {
+    height: 60px;
+  }
+  header .container a {
+    z-index: 999;
+  }
+  header .container a .nav-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 160px;
+    height: 50px;
+  }
+  header .container a .nav-logo img {
+    position: absolute;
+    width: 160px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  header .container nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: 10px;
+  }
+  header .container nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    list-style-type: none;
+  }
+  header .container nav ul li {
+    padding-left: 20px;
+  }
+  header .container nav ul li a {
+    text-transform: uppercase;
+    vertical-align: baseline;
+    text-decoration: none;
+    color: #242B45;
+    font-size: 14px;
+  }
+  header .container nav ul li a:hover {
+    color: #3FBEBC;
+  }
+  header .container nav ul li a {
+    font-weight: 400;
+  }
+  header .container .lang {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto;
+  }
+  header .container .lang .lang__bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    list-style-type: none;
+  }
+  header .container .lang .lang__bar li {
+    padding-right: 10px;
+    padding-left: 5px;
+  }
+  header .container .lang .lang__bar li a {
+    text-transform: uppercase;
+    vertical-align: baseline;
+    text-decoration: none;
+    color: #242B45;
+    font-size: 14px;
+  }
+  header .container .lang .lang__bar li a:hover {
+    color: #3FBEBC;
+  }
+  header .container .lang .lang__bar li a {
+    font-weight: 400;
+  }
+  header .container .lang button {
+    background: #3FBEBC;
+    width: 90px;
+    height: 60px;
+    border-radius: 6px;
+    border: 0;
+    text-transform: uppercase;
+    vertical-align: baseline;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  header .container .mobile-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .headerSticky {
+    display: none;
+  }
+  header .container {
+    height: 30px;
+    width: auto;
+  }
+  header .container a .nav-logo {
+    width: 80px;
+    height: 30px;
+  }
+  header .container a .nav-logo img {
+    width: 80px;
+  }
+  header .container nav {
+    display: none;
+  }
+  header .container .lang button {
+    display: none;
+  }
+  header .container div.mobile .mobile-menu {
+    display: block;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 25px;
+    color: #242B45;
+    line-height: 0;
+    width: 30px;
+  }
+}
+
 .share-container {
   position: fixed;
   bottom: 200px;
