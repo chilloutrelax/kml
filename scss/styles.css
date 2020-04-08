@@ -1633,6 +1633,10 @@ footer .container .social {
   font-size: 11px;
 }
 
+.detail-cont .video-detail .video__suggestion .video__thumbnail .video--small {
+  margin: 0;
+}
+
 .video--cont {
   position: relative;
   width: calc(50% - 43px);
