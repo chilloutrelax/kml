@@ -98,6 +98,29 @@
     }
 }
 
+@media screen and (max-width: 996px){
+    .section-people {
+        .container-fluid {
+            width: 100%;
+
+            .container {
+                width: 100%;
+
+                .tegijad-title {font-size: $fsize14;}
+
+            
+                .modal {
+                    width: 100%;
+
+                    .modal__container {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 650px) {
     .section-people {
         .container-fluid{

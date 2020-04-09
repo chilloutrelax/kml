@@ -436,7 +436,7 @@ header .container .lang button {
   content: "\f00d";
 }
 
-@media screen and (max-width: 776px) {
+@media screen and (max-width: 996px) {
   .share-container {
     bottom: 20px;
     right: 15px;
@@ -722,7 +722,7 @@ footer .container .social {
   background: linear-gradient(180deg, rgba(252, 252, 252, 0) 34%, rgba(36, 43, 69, 0.490634) 73%, rgba(36, 43, 69, 0.499037) 95%);
 }
 
-@media screen and (max-width: 796px) {
+@media screen and (max-width: 996px) {
   .image-container {
     width: 100%;
   }
@@ -878,7 +878,7 @@ footer .container .social {
   font-size: 24px;
 }
 
-@media screen and (max-width: 796px) {
+@media screen and (max-width: 996px) {
   .about-text .container-fluid {
     width: 100%;
     padding: 50px 0;
@@ -1056,7 +1056,7 @@ footer .container .social {
   border: 0px;
 }
 
-@media screen and (max-width: 796px) {
+@media screen and (max-width: 996px) {
   .openlayer-maps {
     width: auto;
   }
@@ -1064,7 +1064,7 @@ footer .container .social {
     width: 100%;
   }
   .openlayer-maps .map-fluid .mapGradient h2 {
-    left: 20px;
+    left: 30px;
     font-size: 40px;
   }
   .openlayer-maps .map-fluid .map {
@@ -1156,7 +1156,7 @@ footer .container .social {
   color: #ffffff;
 }
 
-@media screen and (max-width: 796px) {
+@media screen and (max-width: 996px) {
   .learning .container-fluid {
     width: auto;
   }
@@ -1178,7 +1178,7 @@ footer .container .social {
     width: 90%;
     margin: 0 auto;
   }
-  .learning .container-fluid .learning__container h2 {
+  .learning .container-fluid .learning__container .learning-title {
     font-size: 30px;
   }
   .learning .container-fluid .learning__container .learning-items p {
@@ -1453,6 +1453,24 @@ footer .container .social {
   }
 }
 
+@media screen and (max-width: 996px) {
+  .section-people .container-fluid {
+    width: 100%;
+  }
+  .section-people .container-fluid .container {
+    width: 100%;
+  }
+  .section-people .container-fluid .container .tegijad-title {
+    font-size: 40px;
+  }
+  .section-people .container-fluid .container .modal {
+    width: 100%;
+  }
+  .section-people .container-fluid .container .modal .modal__container {
+    width: 70%;
+  }
+}
+
 @media screen and (max-width: 650px) {
   .section-people .container-fluid {
     width: auto;
@@ -1610,7 +1628,7 @@ footer .container .social {
   text-align: center;
 }
 
-@media screen and (max-width: 796px) {
+@media screen and (max-width: 996px) {
   .partners .container-fluid {
     width: auto;
   }
@@ -1795,7 +1813,7 @@ footer .container .social {
   padding-bottom: 20px;
 }
 
-@media screen and (max-width: 796px) {
+@media screen and (max-width: 996px) {
   .support {
     width: auto;
   }
@@ -2810,7 +2828,7 @@ body {
   padding-right: 0px;
 }
 
-@media screen and (max-width: 796px) {
+@media screen and (max-width: 996px) {
   .searchbar {
     width: auto;
     padding: 10px 0;
@@ -3093,7 +3111,7 @@ body {
   padding-right: 0px;
 }
 
-@media screen and (max-width: 796px) {
+@media screen and (max-width: 996px) {
   .searchbar {
     width: auto;
     padding: 10px 0;

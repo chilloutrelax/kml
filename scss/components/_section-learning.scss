@@ -33,7 +33,7 @@
     };
 };
 
-@media screen and (max-width: 796px) {
+@media screen and (max-width: 996px) {
     .learning {
         .container-fluid {
             width: auto;
@@ -55,7 +55,7 @@
                 padding: 20px 0;    
                 width: 90%;
                 margin: 0 auto;
-                h2 {font-size: $fsize4;}
+                .learning-title {font-size: $fsize4}
 
                 .learning-items {
                     p {
