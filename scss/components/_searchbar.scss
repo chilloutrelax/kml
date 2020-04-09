@@ -96,6 +96,40 @@
 }
 
 
+@media screen and (max-width: 796px) {
+    .searchbar {
+        width: auto;
+        padding: 10px 0;
+        .container {
+            width: 100%;
+            padding: 0;
+            
+            form {
+                display: flex;
+                justify-content: space-between;
+                margin: 0 auto;
+                width: 90%;
+
+                .input__div {
+                    width: 100%;
+                    margin-right: 50px;
+                    input {
+                        width: 100%;
+                    }
+                }
+
+                .button__div {
+                    button {
+                        width: 60px;
+
+                    }
+                }
+            }      
+        }
+    }
+}
+
+
 @media screen and (max-width: 600px) {
     .searchbar {
         padding: 10px 0;

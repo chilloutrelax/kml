@@ -47,6 +47,14 @@ footer {
     };
 };
 
+@media screen and (max-width: 2000px) {
+    footer {
+        .container {
+            width: auto;
+        }
+    }
+}
+
 @media screen and (max-width: 768px) {
 
     footer {
@@ -64,7 +72,7 @@ footer {
             }
 
             .contact-info {
-                padding-left: 20px;
+                padding-left: 40px;
             };
             
             .social {

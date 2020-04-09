@@ -30,7 +30,75 @@
     };
 };
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 796px) {
+    .section-people {
+        .container-fluid{
+            width: auto;
+            padding: 20px 0; 
+            .container {
+                width: 90%;
+                .tegijad-title {font-size: $fsize4;}
+
+                .card__container {
+                    margin: 0 auto;
+                    justify-content: center;
+                    width: 90%;
+
+                    .card {
+                        width: auto;
+                    }
+                }
+
+                .modal {
+                    width: 100%;
+
+                    .modal__container {
+                        width: 80%;
+                        
+                        .modal__heading {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+
+                            .modal__image {
+                                img {
+                                    width: 100%
+                                }
+                            }
+
+                            .modal__content {
+                                text-align: center;
+                                h2 {font-size: $fsize14;}
+
+                                .modal__body {
+                                    .modal__contact {
+                                        flex-direction: row;
+                                        justify-content: space-evenly;
+                                        
+                                        p {
+                                            font-size: $fsize3;
+
+                                            img {width: 10px}
+                                        }
+                                    }
+
+                                    .modal__info {
+                                        display: inherit;
+                                        .modal__text {
+                                            p {font-size: $fsize3;}
+                                        }
+                                    }
+                                }
+                            }    
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
     .section-people {
         .container-fluid{
             width: auto;
@@ -64,6 +132,7 @@
 
                             .modal__image {
                                 width: 100px;
+                                margin-right: 0;
                             }
 
                             .modal__content {

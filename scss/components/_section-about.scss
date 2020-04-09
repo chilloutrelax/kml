@@ -54,6 +54,35 @@
     };
 };
 
+@media screen and (max-width: 796px) {
+    .about-text {
+        .container-fluid {
+            width: 100%;
+            padding: 50px 0;
+
+            .headText {
+                .headingH{
+                    margin-top: -20px; 
+                }
+                h2 {
+                    font-size: 40px;
+                }
+            }
+            
+            .container {
+                width: auto;
+
+                .text-wrap {
+                    width: 100%;
+                    p {
+                        font-size: $fsize1;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 600px) {
     .about-text {
         width: 100%;

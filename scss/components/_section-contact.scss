@@ -26,6 +26,19 @@
     };
 };
 
+@media screen and (max-width: 796px) {
+    .contact {
+        width: auto;
+        .container-fluid {
+            .container{
+                width: 90%;
+
+                h2 {font-size: $fsize14;}
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 600px) {
     .contact {
         width: auto;

@@ -47,6 +47,26 @@
     }
 };
 
+@media screen and (max-width: 796px) {
+    .openlayer-maps {
+        width: auto;
+
+        .map-fluid {
+            width: 100%;
+
+            .mapGradient {
+                h2 {
+                    left: 20px;
+                    font-size: $fsize14;
+                }
+            }
+
+            .map {
+                height: 300px;
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 600px) {
     .openlayer-maps {

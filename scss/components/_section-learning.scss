@@ -33,6 +33,18 @@
     };
 };
 
+@media screen and (max-width: 796px) {
+    .learning {
+        .container-fluid {
+            width: auto;
+            .learning__container {
+                width: 90%;
+                .learning-title {font-size: $fsize14}
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 600px) {
     .learning {
         .container-fluid {
