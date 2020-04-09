@@ -53,3 +53,36 @@
         };
     };
 };
+
+@media screen and (max-width: 600px) {
+    .about-text {
+        width: 100%;
+        .container-fluid {
+            width: auto;
+            padding: 20px 0;
+            .headText {
+                .headingH{
+                    margin-top: -20px; 
+                }
+                h2 {
+                    font-size: 40px;
+                }
+            }
+
+            .container {
+                width: auto;
+                .text-wrap {
+                    max-width: 100%;
+                    p {
+                        font-size: $fsize3;
+                    }
+
+                    #lastSent {
+                        font-size: $fsize1;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}

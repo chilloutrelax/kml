@@ -204,36 +204,16 @@ header {
                     height: 30px;
                     img{
                         width: 80px;
-                    }
-                }
-            }
-
-            nav {
-                display: none;
-            }
-
-            .lang {
-                button {
-                    display: none;
-                }
-            }
+                    };
+                };
+            };
+            .menu {display: none;}
             
-
-            div.mobile {
-                .mobile-menu {
-                    display: block;
-                    background: none;
-                    border: none;
-                    outline: none;
-                    cursor: pointer;
-                    font-size: 25px;
-                    color: $color1;
-                    line-height: 0;
-                    width: 30px;
-                    
-                    }
-                }
-            }
-    }
-}
+            .lang {
+                button {display: none;}
+                
+            };
+        };
+    };
+};
 

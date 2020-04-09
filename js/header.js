@@ -1,4 +1,3 @@
-
 window.onscroll = function() {stickyHeader()};
     var header = document.getElementById("headerSticky");
     var sticky = header.offsetTop;
@@ -10,3 +9,5 @@ window.onscroll = function() {stickyHeader()};
         header.classList.remove("sticky");
     };
 };
+
+

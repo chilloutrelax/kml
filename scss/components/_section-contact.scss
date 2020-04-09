@@ -25,3 +25,28 @@
         };
     };
 };
+
+@media screen and (max-width: 600px) {
+    .contact {
+        width: auto;
+        .container-fluid {
+            padding: 20px 0;
+            width: 100%;
+            .container {
+                width: 90%;
+                h2 {font-size: $fsize4;}
+
+                .contact-items {
+                    p {font-size: $fsize1;}
+
+                    .contact-email {
+                        font-size: $fsize1;
+                        img{
+                            width: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

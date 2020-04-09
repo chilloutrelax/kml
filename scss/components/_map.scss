@@ -48,4 +48,27 @@
 };
 
 
+@media screen and (max-width: 600px) {
+    .openlayer-maps {
+        width: auto;
+        .map-fluid {
+            width: 100%;
+            height: 100%;
+            .mapGradient {
+                width: 100%;
+               h2 {
+                    left: 20px;
+                    font-size: $fsize4;
+               }
+            }
+
+            .map {
+                width: 100%;
+                height: 300px;
+            }
+        }
+    }
+}
+
+
 
