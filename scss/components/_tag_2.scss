@@ -3,6 +3,7 @@
         .tab__container {
             .tags--boxed-list {
                 li {
+                    position: relative;
                     list-style-type: none;
 
                     div{
@@ -11,6 +12,7 @@
                             text-decoration: none;
                             color: $color1;
                             font-family: $font3;
+                            background: $color3;
                             margin: 0;
                             padding: 0 10px;
                             display: inline-flex;
@@ -45,8 +47,145 @@
                             h6 {
                                 font-size: $fsize8;
                             }
-                        };
+
+                            
+                            }
+
+                            
+                        
                     };
+
+                    .no--line {
+                        &::before {
+                            display: none;
+                        }
+
+                        &::after{
+                            display: none;
+                        }
+                    };
+
+                    .line--horisontal {
+                        position: relative;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            margin-top: 0px;
+                            height: 2px;
+                            background: $color4;
+                            left: -18px;
+                            width: 20px;
+                        } 
+                    }
+
+                    .line--vertical {
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: -14%;
+                            margin-top: 0px;
+                            height: 74px;
+                            background: $color4;
+                            left: -20px;
+                            width: 2px;
+                        } 
+                    }
+
+                    .line--last {
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: -14%;
+                            margin-top: 0px;
+                            height: 47px;
+                            background: $color4;
+                            left: -20px;
+                            width: 2px;
+                        }
+                    }
+
+                    .line--last-one {
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: -14%;
+                            margin-top: 0px;
+                            height: 49px;
+                            background: $color4;
+                            left: -20px;
+                            width: 2px;
+                        }
+                    }
+
+                    .line--last-two {
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: -10%;
+                            margin-top: 0px;
+                            height: 40px;
+                            background: $color4;
+                            left: -20px;
+                            width: 2px;
+                        }
+                    }
+
+                    .line--vertical-history-first {
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: -15%;
+                            margin-top: 0px;
+                            bottom: 0;
+                            height: 50px;
+                            background: #EE6C4D;
+                            left: -20px;
+                            width: 2px;
+                        } 
+                    }
+
+                    .line--vertical-history-second {
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: -15%;
+                            margin-top: 0px;
+                            bottom: 0;
+                            height: 47px;
+                            background: #EE6C4D;
+                            left: -20px;
+                            width: 2px;
+                        } 
+                    }
+
+                    .line--vertical-history-third {
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: -15%;
+                            margin-top: 0px;
+                            bottom: 0;
+                            height: 42px;
+                            background: #EE6C4D;
+                            left: -20px;
+                            width: 2px;
+                        } 
+                    }
+
+                    .line--vertical-history-last {
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: -15%;
+                            margin-top: 0px;
+                            bottom: 0;
+                            height: 40px;
+                            background: #EE6C4D;
+                            left: -20px;
+                            width: 2px;
+                        } 
+                    }
                 };
             };
         };
