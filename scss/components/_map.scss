@@ -47,6 +47,25 @@
     }
 };
 
+@media screen and (max-width: 1199px) {
+    .openlayer-maps {
+        width: auto;
+        .map-fluid {
+            width: 100%;
+
+            .mapGradient {
+                h2 {
+                    left: 20px;
+                }
+            }
+
+            .map {
+                height: 300px;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 996px) {
     .openlayer-maps {
         width: auto;
@@ -56,7 +75,7 @@
 
             .mapGradient {
                 h2 {
-                    left: 30px;
+                    left: 50px;
                     font-size: $fsize14;
                 }
             }
@@ -65,6 +84,12 @@
                 height: 300px;
             }
         }
+    }
+}
+
+@media screen and (max-width: 996px) {
+    .mapGradient {
+        left: 50px;
     }
 }
 
@@ -77,7 +102,7 @@
             .mapGradient {
                 width: 100%;
                h2 {
-                    left: 20px;
+                    left: 30px;
                     font-size: $fsize4;
                }
             }

@@ -92,6 +92,15 @@
     }
 }
 
+@media screen and (max-width: 1199px){
+    .support {
+        width: auto;
+        .container {
+            width: 90%;
+        }
+    }
+}
+
 @media screen and (max-width: 996px){
     .support {
         width: auto;

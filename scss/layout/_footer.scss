@@ -47,6 +47,16 @@ footer {
     };
 };
 
+@media screen and (max-width: 1199px) {
+    footer {
+        width: auto;
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+}
+
 @media screen and (max-width: 768px) {
 
     footer {

@@ -31,20 +31,19 @@
         width: auto;
         .container-fluid {
             .container{
-                width: 90%;
-
+                width: 100%;
                 
             }
         }
     }
 }
 
-@media screen and (max-width: 796px) {
+@media screen and (max-width: 996px) {
     .contact {
         width: auto;
         .container-fluid {
             .container{
-                width: 90%;
+                width: 100%;
 
                 h2 {font-size: $fsize14;}
             }

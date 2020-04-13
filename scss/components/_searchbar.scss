@@ -161,3 +161,37 @@
         }
     }
 }
+
+
+
+@media screen and (max-width: 1199px) {
+    .searchbar--medium {
+        width: auto;
+        .container {
+            width: 100%;
+            padding-left: 0;
+    
+            form {
+                width: auto;
+                margin-left: 140px;
+                .input__div {
+                    display: flex;
+                    flex: 1;
+                    
+                    input {
+                        display: block;
+                        width: 100%;
+                    }
+                }
+    
+                .button__div {
+                    padding-right: 20px;
+                    button {
+                        justify-content: flex-end;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
