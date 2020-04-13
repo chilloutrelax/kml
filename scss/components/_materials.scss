@@ -24,3 +24,88 @@ body {
         }
     }
 }
+
+@media screen and (max-width: 1199px) {
+    .page-cont {
+        width: auto;
+        .container {
+            width: 100%;
+            
+            .page__heading {
+                width: 90%;
+                margin: 0 auto;
+                
+            }
+
+            .materials__thumbnails {
+                margin: 0 auto;
+                width: 90%;
+                flex-direction: row;
+
+                .video--cont {
+                    margin: 10px auto;
+                    width: auto;
+                }
+                
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .page-cont {
+        width: auto;
+        .container {
+            width: 100%;
+            
+            .page__heading {
+                width: 90%;
+                margin: 0 auto;
+
+                h2 {font-size: $fsize12;}
+            }
+
+            .materials__thumbnails {
+                margin: 0 auto;
+                width: 90%;
+                flex-direction: row;
+
+                .video--cont {
+                    margin: 10px auto;
+                    width: auto;
+                }
+                
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .page-cont {
+        width: auto;
+        .container {
+            width: 100%;
+            
+            .page__heading {
+                width: 90%;
+                margin: 0 auto;
+
+                h2 {font-size: $fsize14;}
+            }
+
+            .materials__thumbnails {
+                margin: 0 auto;
+                width: 90%;
+                flex-direction: row;
+
+                .video--cont {
+                    width: auto;
+                }
+                
+            }
+            
+        }
+    }
+}

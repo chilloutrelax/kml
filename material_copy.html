@@ -39,6 +39,23 @@
                 <button onclick="location.href='index.html#support-container'">Toetan</button>
             </div>
 
+            <div class="mobile">
+            <button class="btn mobile-btn" onclick="openNav()"><i class="fas fa-bars"></i></button>
+            </div>
+
+            <div id="mobileMenu" class="mobile-menu">
+                <a href="javascript:void(0)" class="close-menu" onclick="closeNav()">&times;</a>
+                <ul>
+                    <li><a href="/video-list.html">Videoteek</a></li>
+                    <li><a href="/index.html#map-cont">Kaart</a></li>
+                    <li><a href="/tags.html">Teemad</a></li>
+                    <li><a href="/index.html#learn-cont">Õppematerjalid</a></li>
+                    <li><a href="/index.html#about-txt">Tutvustus</a></li>
+                    <li><a href="/index.html#tegijad">Tegijad</a></li>
+                    <li><a href="/index.html#support-container">Toeta</a></li>
+                </ul>
+            </div>
+
         </div>
     </header>
 
@@ -77,7 +94,7 @@
         </div>
     
         <div class="share-btn">
-            <i id="share" class="fas fa-share-alt"></i>
+        <i id="share" class="fas fa-share-alt"></i>
             <i id="times" class="fas fa-times"></i>
         </div>
     </div>
@@ -120,9 +137,13 @@
 </body>
 
 
-    <script src="js/header.js"></script>
-    <script src="js/modal.js"></script>
-    <script src="js/map.js"></script>
-    <script src="js/sharebtn.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/build/ol.js"></script>
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList"></script>
+<script src="js/header.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/map.js"></script>
+<script src="js/sharebtn.js"></script>
+<script src="js/videoteek.js"></script>
+<script src="js/mobileMenu.js"></script>
 
 </html>

@@ -63,3 +63,77 @@
         };
     };
 };
+
+@media screen and (max-width: 1199px) {
+    .page-cont {
+        width: auto;
+        .container {
+            width: 100%;
+
+            .page__heading {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .materials__info {
+                width: 90%;
+                margin: 0 auto;
+                padding-top: 20px;
+                flex-direction: row;
+                .materials__text {
+                    h3 {font-size: $fsize2};
+                    p {font-size: $fsize1};
+                }
+
+                .materials__image {
+                    img {
+                        width: 100%;
+                        
+                    }
+                }
+            }
+
+            .materials__download {
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 796px) {
+    .page-cont {
+        width: auto;
+        .container {
+            width: 100%;
+
+            .page__heading {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .materials__info {
+                width: 90%;
+                margin: 0 auto;
+                padding-top: 20px;
+                flex-direction: column;
+                .materials__text {
+                    h3 {font-size: $fsize2};
+                    p {font-size: $fsize1};
+                }
+
+                .materials__image {
+                    img {
+                        width: 100%;
+                        
+                    }
+                }
+            }
+
+            .materials__download {
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
