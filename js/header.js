@@ -9,5 +9,3 @@ window.onscroll = function() {stickyHeader()};
         header.classList.remove("sticky");
     };
 };
-
-

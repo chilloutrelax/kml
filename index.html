@@ -18,7 +18,7 @@
             </div>
             </a>
             <nav>
-                <div class="menu" id="menu-mob">
+                <div class="menu">
                     <ul>
                         <li><a href="/video-list.html">Videoteek</a></li>
                         <li><a href="/index.html#map-cont">Kaart</a></li>
@@ -40,7 +40,20 @@
             </div>
 
             <div class="mobile">
-            <button class="btn mobile-menu" onclick="mobile()"><i class="fas fa-bars"></i></button>
+            <button class="btn mobile-btn" onclick="openNav()"><i class="fas fa-bars"></i></button>
+            </div>
+
+            <div id="mobileMenu" class="mobile-menu">
+                <a href="javascript:void(0)" class="close-menu" onclick="closeNav()">&times;</a>
+                <ul>
+                    <li><a href="/video-list.html">Videoteek</a></li>
+                    <li><a href="/index.html#map-cont">Kaart</a></li>
+                    <li><a href="/tags.html">Teemad</a></li>
+                    <li><a href="/index.html#learn-cont">Õppematerjalid</a></li>
+                    <li><a href="/index.html#about-txt">Tutvustus</a></li>
+                    <li><a href="/index.html#tegijad">Tegijad</a></li>
+                    <li><a href="/index.html#support-container">Toeta</a></li>
+                </ul>
             </div>
 
         </div>

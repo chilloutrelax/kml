@@ -98,6 +98,52 @@ header {
     };
 };
 
+@media screen and (min-width: 1200px) {
+    .mobile {display: none;}
+}
+
+
+@media screen and (max-width: 1199px) {
+
+    .headerSticky {
+        display: none;
+    }
+
+    header {
+        .container {
+            height: 60px;
+            width: auto;
+
+            a{
+                .nav-logo{
+                    width: 100px;
+                    margin-left: 20px;
+                    height: 30px;
+                    img{
+                        width: 120px;
+                    };
+                };
+            };
+            .menu {display: none;}
+            
+            .lang {
+                button {display: none;}
+                
+            };
+
+            .mobile {
+                .mobile-btn {
+                    background: none;
+                    border: none;
+                    font-size: $fsize6;
+                    color: $color1;
+                }
+            }
+        };
+    };
+};
+
+
 @media screen and (max-width: 600px){
     header {
         margin: 0 auto;
@@ -111,6 +157,7 @@ header {
                 z-index: 999;
                 .nav-logo {
                     display: flex;
+                    margin-left: -20px;
                     justify-content: center;
                     width: 160px;
                     height: 50px;
@@ -118,7 +165,7 @@ header {
         
                     img {
                         position: absolute;
-                        width: 160px;
+                        width: 120px;
                         transition: 0.4s;
                     };
                 };
@@ -176,44 +223,3 @@ header {
         };
     };
 };
-
-@media screen and (min-width: 1001px) {
-    header {
-        .container {
-            .mobile-menu {
-                display: none;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 1000px) {
-
-    .headerSticky {
-        display: none;
-    }
-
-    header {
-        .container {
-            height: 30px;
-            width: auto;
-
-            a{
-                .nav-logo{
-                    width: 80px;
-                    height: 30px;
-                    img{
-                        width: 80px;
-                    };
-                };
-            };
-            .menu {display: none;}
-            
-            .lang {
-                button {display: none;}
-                
-            };
-        };
-    };
-};
-
