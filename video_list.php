@@ -15,7 +15,7 @@
     <main>
         <?php include './components/searchBar_medium.html' ?>
         
-        <?php include './components/vid-det-container.html' ?>
+        <?php include './components/video-list-tab.html' ?>
 
         <?php include './components/shareBtn.html' ?>
     </main>

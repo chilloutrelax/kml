@@ -13,9 +13,8 @@
     <?php include './components/header.html' ?>
 
     <main>
-        <?php include './components/searchBar_medium.html' ?>
         
-        <?php include './components/vid-det-container.html' ?>
+        <?php include './components/materials-1.html' ?>
 
         <?php include './components/shareBtn.html' ?>
     </main>

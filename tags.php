@@ -10,12 +10,15 @@
 </head>
 
 <body>
-    <?php include './components/header.html' ?>
+    <?php include './components/header-tag.html' ?>
 
     <main>
-        <?php include './components/searchBar_medium.html' ?>
-        
-        <?php include './components/vid-det-container.html' ?>
+        <?php include './components/ph/teemad.html' ?> 
+
+        <?php include './components/searchbar-full.html' ?>  
+
+        <?php include './components/section-tags1.html' ?>
+       
 
         <?php include './components/shareBtn.html' ?>
     </main>
